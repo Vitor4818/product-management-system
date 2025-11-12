@@ -3,14 +3,12 @@ using Hypesoft.Domain.Entities;
 namespace Hypesoft.Domain.Repositories
 {
     /// <summary>
-    /// Contrato para o repositório de categorias.
+    /// Contrato para o repositório de Categorias.
+    /// Herda todos os métodos CRUD básicos (GetById, GetAll, Add, Update, Delete)
+    /// do IRepository<Category> genérico.
     /// </summary>
-    public interface ICategoryRepository
+    public interface ICategoryRepository : IRepository<Category>
     {
-        Task<Category?> GetByIdAsync(string id);
-        Task<IEnumerable<Category>> GetAllAsync();
-        Task AddAsync(Category category);
-        Task UpdateAsync(Category category);
-        Task DeleteAsync(string id);
+
     }
 }

@@ -1,43 +1,47 @@
 using FluentValidation;
 using Hypesoft.Application.Commands;
+using Hypesoft.Domain.Repositories;
+using System.Threading;
+using System.Threading.Tasks;
+using MongoDB.Bson; 
 
 namespace Hypesoft.Application.Validators
 {
-    /// <summary>
-    /// Define as regras de validação para o comando CreateProductCommand.
-    /// </summary>
     public class CreateProductCommandValidator : AbstractValidator<CreateProductCommand>
     {
-        public CreateProductCommandValidator()
+        private readonly ICategoryRepository _categoryRepository;
+
+        public CreateProductCommandValidator(ICategoryRepository categoryRepository) 
         {
-            // Regra para 'Name':
+            _categoryRepository = categoryRepository; 
+
             RuleFor(x => x.Name)
-                .NotEmpty() 
-                .WithMessage("O nome do produto é obrigatório.")
-                .MaximumLength(100)
-                .WithMessage("O nome do produto não pode exceder 100 caracteres.");
-
-            // Regra para 'Description':
-            RuleFor(x => x.Description)
                 .NotEmpty()
-                .WithMessage("A descrição do produto é obrigatória")
-                .MaximumLength(500) 
-                .WithMessage("A descrição não pode exceder 500 caracteres.");
+                .WithMessage("O nome do produto é obrigatório.");
 
-            // Regra para 'Price':
             RuleFor(x => x.Price)
-                .GreaterThan(0) 
+                .GreaterThan(0)
                 .WithMessage("O preço deve ser maior que zero.");
 
-            // Regra para 'StockQuantity':
             RuleFor(x => x.StockQuantity)
                 .GreaterThanOrEqualTo(0)
                 .WithMessage("A quantidade em estoque não pode ser negativa.");
 
-            // Regra para 'CategoryId':
+            
             RuleFor(x => x.CategoryId)
-                .NotEmpty() 
-                .WithMessage("A categoria do produto é obrigatória.");
+                .Cascade(CascadeMode.Stop) 
+                .NotEmpty().WithMessage("O ID da Categoria é obrigatório.")
+                .MustAsync(CategoryMustExist)
+                .WithMessage("A Categoria informada não existe ou é inválida.");
+        }
+        private async Task<bool> CategoryMustExist(string id, CancellationToken cancellationToken)
+        {
+            if (!ObjectId.TryParse(id, out _))
+            {
+                return false; 
+            }
+            var category = await _categoryRepository.GetByIdAsync(id);
+            return category != null;
         }
     }
 }

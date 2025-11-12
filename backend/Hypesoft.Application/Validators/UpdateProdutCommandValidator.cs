@@ -1,51 +1,56 @@
 using FluentValidation;
 using Hypesoft.Application.Commands;
+using Hypesoft.Domain.Repositories;
+using System.Threading;
+using System.Threading.Tasks;
+using MongoDB.Bson; 
 
 namespace Hypesoft.Application.Validators
 {
-    /// <summary>
-    /// Define as regras de validação para o comando de update.
-    /// </summary>
     public class UpdateProductCommandValidator : AbstractValidator<UpdateProductCommand>
     {
-        public UpdateProductCommandValidator()
+        private readonly ICategoryRepository _categoryRepository;
+
+        public UpdateProductCommandValidator(ICategoryRepository categoryRepository) 
         {
-            // Regra para 'Id':
+            _categoryRepository = categoryRepository; 
+            
             RuleFor(x => x.Id)
                 .NotEmpty()
                 .WithMessage("O ID do produto é obrigatório para a atualização.");
 
-            // Regra para 'Name':
             RuleFor(x => x.Name)
                 .NotEmpty()
                 .WithMessage("O nome do produto não pode ser vazio.")
-                .MaximumLength(100)
-                .WithMessage("O nome do produto não pode exceder 100 caracteres.")
                 .When(x => x.Name != null); 
 
-            // Regra para 'Description':
-            RuleFor(x => x.Description)
-                .MaximumLength(500)
-                .WithMessage("A descrição não pode exceder 500 caracteres.")
-                .When(x => x.Description != null);
-
-            // Regra para 'Price':
             RuleFor(x => x.Price)
                 .GreaterThan(0)
                 .WithMessage("O preço deve ser maior que zero.")
                 .When(x => x.Price.HasValue);
 
-            // Regra para 'StockQuantity':
             RuleFor(x => x.StockQuantity)
                 .GreaterThanOrEqualTo(0)
                 .WithMessage("A quantidade em estoque não pode ser negativa.")
-                .When(x => x.StockQuantity.HasValue); 
+                .When(x => x.StockQuantity.HasValue);
 
-            // Regra para 'CategoryId':
+            
             RuleFor(x => x.CategoryId)
-                .NotEmpty()
-                .WithMessage("A categoria do produto não pode ser vazia.")
+                .Cascade(CascadeMode.Stop)
+                .NotEmpty().WithMessage("O ID da Categoria não pode ser vazio.")
+                .MustAsync(CategoryMustExist) 
+                .WithMessage("A Categoria informada não existe ou é inválida.")
                 .When(x => x.CategoryId != null); 
+            
+        }
+        private async Task<bool> CategoryMustExist(string id, CancellationToken cancellationToken)
+        {
+            if (string.IsNullOrWhiteSpace(id) || !ObjectId.TryParse(id, out _))
+            {
+                return false; 
+            }
+            var category = await _categoryRepository.GetByIdAsync(id);
+            return category != null;
         }
     }
 }

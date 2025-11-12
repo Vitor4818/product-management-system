@@ -6,6 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Hypesoft.API.Controllers
 {
+    /// <summary>
+    /// Endpoint da API para gerenciar Categorias.
+    /// Este Controller apenas delega todo o trabalho
+    /// para o MediatR seguindo o padrão CQRS.
+    /// </summary>
     [ApiController]
     [Route("api/[controller]")]
     public class ProductsController : ControllerBase
