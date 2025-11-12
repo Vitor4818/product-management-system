@@ -1,0 +1,20 @@
+# 1. PASTAS DE BUILD (O MAIS IMPORTANTE)
+[Bb]in/
+[Oo]bj/
+
+# 2. ARQUIVOS DE IDE (VISUAL STUDIO)
+.vs/
+
+# 3. ARQUIVOS DE IDE (VS CODE)
+.vscode/
+
+# 4. CONFIGURAÇÕES DE USUÁRIO
+*.user
+*.suo
+
+# 5. CONFIGURAÇÕES DE EXECUÇÃO (LOCAL)
+Properties/launchSettings.json
+
+# 6. LOGS E ARQUIVOS TEMPORÁRIOS
+*.log
+*.tmp

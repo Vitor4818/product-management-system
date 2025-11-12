@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  # Define o serviço do MongoDB
+  mongo:
+    image: mongo:latest # Usa a imagem oficial mais recente do Mongo
+    container_name: hypesoft_mongo_db # Um nome fácil de identificar
+    ports:
+      - "27017:27017" # Mapeia a porta 27017 do container para a 27017 da sua máquina
+    volumes:
+      - mongo-data:/data/db # Garante que os dados persistam mesmo se o container parar
+    networks:
+      - hypesoft-net
+
+# Define a rede (para futuros serviços se comunicarem)
+networks:
+  hypesoft-net:
+    driver: bridge
+
+# Define o volume para persistir os dados
+volumes:
+  mongo-data:
+    driver: local

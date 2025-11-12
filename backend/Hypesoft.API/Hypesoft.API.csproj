@@ -7,12 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.10" />
+    <!-- SUAS REFERÊNCIAS ESTÃO CORRETAS AQUI -->
+    <ProjectReference Include="..\Hypesoft.Application\Hypesoft.Application.csproj" />
+    <ProjectReference Include="..\Hypesoft.Infrastructure\Hypesoft.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Hypesoft.Application\Hypesoft.Application.csproj" />
-    <ProjectReference Include="..\Hypesoft.Infrastructure\Hypesoft.Infrastructure.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.10" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.6" /> <!-- ESTE PACOTE ESTAVA FALTANDO! -->
   </ItemGroup>
 
 </Project>
