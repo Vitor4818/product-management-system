@@ -1,8 +1,10 @@
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 using FluentValidation;
+using MediatR;
+using Hypesoft.Application.Common.Behaviors; 
 
-namespace Hypesoft.Application
+namespace Hypesoft.Application.Extensions
 {
     /// <summary>
     /// Método de Extensão para registrar todos os serviços
@@ -21,6 +23,9 @@ namespace Hypesoft.Application
             
             // Registra o FluentValidation
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+
+            // Registra ValidationBehavior no Pipeline do MediatR.
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
 
             return services;
         }

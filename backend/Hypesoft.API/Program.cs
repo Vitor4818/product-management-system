@@ -1,7 +1,7 @@
-// Importa os novos "Instaladores" que criamos
 using Hypesoft.Application;
 using Hypesoft.Infrastructure.Configurations;
-
+using Hypesoft.Application.Extensions; 
+using Hypesoft.API.Middlewares; 
 var builder = WebApplication.CreateBuilder(args);
 
 
@@ -31,5 +31,5 @@ app.UseHttpsRedirection();
 // app.UseAuthorization();
 
 app.MapControllers();
-
+app.UseMiddleware<ErrorHandlerMiddleware>();
 app.Run();
