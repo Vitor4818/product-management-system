@@ -4,7 +4,7 @@ using MediatR;
 namespace Hypesoft.Application.Queries
 {
     /// <summary>
-    /// Esta é a "Comanda" para buscar UM produto.
+    /// Esta é a Quey para buscar UM produto.
     /// </summary>
     public class GetProductByIdQuery : IRequest<ProductDto?>
     {

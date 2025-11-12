@@ -1,4 +1,5 @@
 using Hypesoft.Application.Commands;
+using Hypesoft.Application.DTOs;
 using Hypesoft.Application.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -58,6 +59,25 @@ namespace Hypesoft.API.Controllers
             }
             return Ok(product);
         }
+
+        /// Rota: GET /api/products/search?name=notebook
+        /// </summary>
+        /// <param name="name">O termo de busca para o nome do produto.</param>
+        /// <returns>Uma lista de produtos que correspondem à busca.</returns>
+        [HttpGet("search")]
+        [ProducesResponseType(typeof(IEnumerable<ProductDto>), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> SearchProductsByName([FromQuery] string name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                return BadRequest("O termo de busca (name) não pode ser vazio.");
+            }
+            var query = new GetProductsByNameQuery(name);
+            var products = await _mediator.Send(query);
+            return Ok(products);
+        }
+
 
         /// <summary>
         /// Atualiza um produto existente.

@@ -11,6 +11,8 @@ namespace Hypesoft.Domain.Repositories
     {
         Task<IEnumerable<Product>> GetByCategoryIdAsync(string categoryId);
         Task<IEnumerable<Product>> GetLowStockAsync(int threshold = 10);
+        Task<IEnumerable<Product>> GetByNameAsync(string name);
+
     }
 
     
