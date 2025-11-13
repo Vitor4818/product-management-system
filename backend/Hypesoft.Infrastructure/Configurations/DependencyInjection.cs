@@ -15,8 +15,9 @@ namespace Hypesoft.Infrastructure.Configurations
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
             
-            services.AddSingleton<MongoDbContext>();           
+            services.AddSingleton<MongoDbContext>();
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
             return services;
         }
     }

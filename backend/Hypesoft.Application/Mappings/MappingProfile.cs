@@ -14,6 +14,8 @@ namespace Hypesoft.Application.Mappings
         {
             CreateMap<Product, ProductDto>();
             CreateMap<CreateProductCommand, Product>();
+            CreateMap<Category, CategoryDto>();
+            CreateMap<CreateCategoryCommand, Category>();
         }
     }
 }

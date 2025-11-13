@@ -6,6 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Hypesoft.API.Controllers
 {
+    /// <summary>
+    /// Endpoint da API para gerenciar Categorias.
+    /// Este Controller apenas delega todo o trabalho
+    /// para o MediatR seguindo o padrão CQRS.
+    /// </summary>
     [ApiController]
     [Route("api/[controller]")]
     public class ProductsController : ControllerBase
@@ -78,6 +83,19 @@ namespace Hypesoft.API.Controllers
             return Ok(products);
         }
 
+                /// <summary>
+        /// Filtra produtos por um ID de categoria específico.
+        /// </summary>
+        /// <param name="categoryId">O ID da categoria para filtrar.</param>
+        /// <returns>Uma lista de produtos que pertencem à categoria.</returns>
+        [HttpGet("by-category/{categoryId}")]
+        [ProducesResponseType(typeof(IEnumerable<ProductDto>), StatusCodes.Status200OK)]
+        public async Task<IActionResult> GetProductsByCategoryId(string categoryId)
+        {
+            var query = new GetProductsByCategoryIdQuery(categoryId);
+            var products = await _mediator.Send(query);
+            return Ok(products);
+        }
 
         /// <summary>
         /// Atualiza um produto existente.
