@@ -5,7 +5,7 @@ namespace Hypesoft.Application.Queries
 {
     /// <summary>
     /// Query para buscar UMA categoria pelo ID.
-    /// Retorna um único CategoryDto (ou nulo).
+    /// Retorna um único CategoryDto.
     /// </summary>
     public class GetCategoryByIdQuery : IRequest<CategoryDto?>
     {

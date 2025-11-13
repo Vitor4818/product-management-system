@@ -83,7 +83,7 @@ namespace Hypesoft.API.Controllers
             return Ok(products);
         }
 
-                /// <summary>
+         /// <summary>
         /// Filtra produtos por um ID de categoria específico.
         /// </summary>
         /// <param name="categoryId">O ID da categoria para filtrar.</param>
