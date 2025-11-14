@@ -1,4 +1,5 @@
 using Hypesoft.Domain.Entities;
+using Hypesoft.Domain.Models;
 
 namespace Hypesoft.Domain.Repositories
 {
@@ -12,6 +13,11 @@ namespace Hypesoft.Domain.Repositories
         Task<IEnumerable<Product>> GetByCategoryIdAsync(string categoryId);
         Task<IEnumerable<Product>> GetLowStockAsync(int threshold = 10);
         Task<IEnumerable<Product>> GetByNameAsync(string name);
+        Task<DashboardMetricsDto> GetDashboardMetricsAsync(); 
+        Task<IEnumerable<CategoryProductCountDto>> GetProductsPerCategoryAsync(); 
+
+
+
 
     }
 

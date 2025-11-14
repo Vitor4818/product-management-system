@@ -8,6 +8,8 @@ namespace Hypesoft.Domain.Entities
     /// Representa uma Categoria de Produto no domínio.
     /// Herda de BaseEntity para obter a propriedade Id.
     /// </summary>
+    [BsonDiscriminator("Categories")]
+    [BsonIgnoreExtraElements]
     public class Category : BaseEntity
     {
         [BsonElement("name")]
