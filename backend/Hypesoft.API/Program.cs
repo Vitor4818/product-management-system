@@ -2,7 +2,18 @@ using Hypesoft.Application;
 using Hypesoft.Infrastructure.Configurations;
 using Hypesoft.Application.Extensions; 
 using Hypesoft.API.Middlewares; 
+using Serilog;
+
+
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("logs/hypesoft_log.txt", rollingInterval: RollingInterval.Day) 
+    .CreateLogger();
+
 var builder = WebApplication.CreateBuilder(args);
+
+// utiliza o serilg
+builder.Host.UseSerilog(); 
 
 
 // Todos os serviços da camada de Aplicação
