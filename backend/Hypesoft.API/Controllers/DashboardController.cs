@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Hypesoft.Application.DTOs;
 using Hypesoft.Application.Queries;
 using Hypesoft.Domain.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Hypesoft.API.Controllers
 {
@@ -13,6 +14,7 @@ namespace Hypesoft.API.Controllers
     /// </summary>
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class DashboardController : ControllerBase
     {
         private readonly IMediator _mediator;
