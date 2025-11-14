@@ -1,23 +1,55 @@
 version: '3.8'
 
 services:
-  # Define o serviço do MongoDB
+  # --- MongoDB (Seu banco de dados principal) ---
   mongo:
-    image: mongo:latest # Usa a imagem oficial mais recente do Mongo
-    container_name: hypesoft_mongo_db # Um nome fácil de identificar
+    image: mongo:latest
+    container_name: hypesoft_mongo_db
     ports:
-      - "27017:27017" # Mapeia a porta 27017 do container para a 27017 da sua máquina
+      - "27017:27017"
     volumes:
-      - mongo-data:/data/db # Garante que os dados persistam mesmo se o container parar
+      - mongo-data:/data/db
     networks:
       - hypesoft-net
 
-# Define a rede (para futuros serviços se comunicarem)
+  # --- Postgres (Banco de dados exclusivo do Keycloak) ---
+  postgres-keycloak:
+    image: postgres:15
+    container_name: hypesoft-keycloak-db
+    environment:
+      POSTGRES_DB: keycloak
+      POSTGRES_USER: keycloak
+      POSTGRES_PASSWORD: password
+    volumes:
+      - postgres_keycloak_data:/var/lib/postgresql/data
+    networks:
+      - hypesoft-net
+
+  # --- Keycloak (Serviço de Identidade) ---
+  keycloak:
+    image: quay.io/keycloak/keycloak:24.0
+    container_name: hypesoft-keycloak
+    command: start-dev
+    environment:
+      KC_DB: postgres
+      KC_DB_URL: jdbc:postgresql://postgres-keycloak:5432/keycloak
+      KC_DB_USERNAME: keycloak
+      KC_DB_PASSWORD: password
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres-keycloak
+    networks:
+      - hypesoft-net
+
 networks:
   hypesoft-net:
     driver: bridge
 
-# Define o volume para persistir os dados
 volumes:
   mongo-data:
+    driver: local
+  postgres_keycloak_data:
     driver: local
