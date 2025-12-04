@@ -8,7 +8,6 @@ namespace Hypesoft.Application.Queries
     /// Query para buscar TODAS as categorias.
     /// Retorna uma lista de CategoryDto.
     /// </summary>
-    public class GetAllCategoriesQuery : IRequest<IEnumerable<CategoryDto>>
-    {
-    }
+    public record GetAllCategoriesQuery(int PageNumber = 1, int PageSize = 25)
+        : IRequest<PaginatedListDto<CategoryDto>>;
 }

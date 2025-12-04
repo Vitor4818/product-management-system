@@ -25,13 +25,15 @@ namespace Hypesoft.API.Controllers
         }
 
         /// <summary>
-        /// Obtém a lista de produtos com a quantidade em estoque abaixo do limite (menor que 10).
+        /// Lista produtos com estoque baixo, suportando paginação no resultado.
         /// </summary>
-        [HttpGet("low-stock")]
-        [ProducesResponseType(typeof(IEnumerable<ProductDto>), 200)]
-        public async Task<IActionResult> GetLowStockProducts()
+        /// <param name="query">Parâmetros de paginação (PageNumber e PageSize).</param>
+        [HttpGet("lowstock")]
+        [Authorize(Roles = "admin")]
+        [ProducesResponseType(typeof(PaginatedListDto<ProductDto>), StatusCodes.Status200OK)]
+        public async Task<IActionResult> GetLowStockProducts([FromQuery] GetLowStockProductsQuery query)
         {
-            var products = await _mediator.Send(new GetLowStockProductsQuery());
+            var products = await _mediator.Send(query);
             return Ok(products);
         }
 

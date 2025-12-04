@@ -2,8 +2,10 @@ using Hypesoft.Application.Commands;
 using Hypesoft.Application.DTOs;
 using Hypesoft.Application.Queries;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Authorization; // <--- Importante
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization; 
 
 namespace Hypesoft.API.Controllers
 {
@@ -19,7 +21,6 @@ namespace Hypesoft.API.Controllers
     {
         private readonly IMediator _mediator;
 
-        //Injeta o MediatR
         public ProductsController(IMediator mediator)
         {
             _mediator = mediator;
@@ -33,22 +34,27 @@ namespace Hypesoft.API.Controllers
         public async Task<IActionResult> CreateProduct([FromBody] CreateProductCommand command)
         {
             var productId = await _mediator.Send(command);
-            // Retorna o ID do novo produto
             return Ok(new { NewProductId = productId });
         }
 
 
         /// <summary>
-        /// Lista todos os produtos.
+        /// Lista todos os produtos com suporte a paginação.
         /// </summary>
+        /// <param name="query">Parâmetros de paginação (PageNumber e PageSize).</param>
+        /// <returns>Uma lista paginada de produtos.</returns>
         [HttpGet]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<IActionResult> GetAllProducts()
+        [Authorize(Roles = "admin")] // Apenas usuários com a role "admin" podem listar
+        [ProducesResponseType(typeof(PaginatedListDto<ProductDto>), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        public async Task<IActionResult> GetAllProducts([FromQuery] GetAllProductsQuery query)
         {
-            var query = new GetAllProductsQuery();
             var products = await _mediator.Send(query);
             return Ok(products);
         }
+
+
 
         /// <summary>
         /// Busca um produto específico pelo seu ID.
@@ -68,37 +74,39 @@ namespace Hypesoft.API.Controllers
             return Ok(product);
         }
 
-        /// Rota: GET /api/products/search?name=notebook
+        /// <summary>
+        /// Busca produtos pelo nome, suportando paginação no resultado.
         /// </summary>
-        /// <param name="name">O termo de busca para o nome do produto.</param>
-        /// <returns>Uma lista de produtos que correspondem à busca.</returns>
+        /// <param name="query">O termo de busca e os parâmetros de paginação.</param>
         [HttpGet("search")]
-        [ProducesResponseType(typeof(IEnumerable<ProductDto>), StatusCodes.Status200OK)]
+        [Authorize(Roles = "admin")]
+        [ProducesResponseType(typeof(PaginatedListDto<ProductDto>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> SearchProductsByName([FromQuery] string name)
+        public async Task<IActionResult> GetProductsByName([FromQuery] GetProductsByNameQuery query)
         {
-            if (string.IsNullOrWhiteSpace(name))
+            if (string.IsNullOrWhiteSpace(query.Name))
             {
-                return BadRequest("O termo de busca (name) não pode ser vazio.");
+                return BadRequest("O termo de busca (Name) não pode ser vazio.");
             }
-            var query = new GetProductsByNameQuery(name);
             var products = await _mediator.Send(query);
             return Ok(products);
         }
 
-         /// <summary>
+
+        /// <summary>
         /// Filtra produtos por um ID de categoria específico.
         /// </summary>
         /// <param name="categoryId">O ID da categoria para filtrar.</param>
         /// <returns>Uma lista de produtos que pertencem à categoria.</returns>
         [HttpGet("by-category/{categoryId}")]
-        [ProducesResponseType(typeof(IEnumerable<ProductDto>), StatusCodes.Status200OK)]
-        public async Task<IActionResult> GetProductsByCategoryId(string categoryId)
+        [Authorize(Roles = "admin")]
+        [ProducesResponseType(typeof(PaginatedListDto<ProductDto>), StatusCodes.Status200OK)]
+        public async Task<IActionResult> GetProductsByCategoryId([FromRoute] string categoryId, [FromQuery] GetProductsByCategoryIdQuery query)
         {
-            var query = new GetProductsByCategoryIdQuery(categoryId);
-            var products = await _mediator.Send(query);
+            var products = await _mediator.Send(query with { CategoryId = categoryId });
             return Ok(products);
         }
+
 
         /// <summary>
         /// Atualiza um produto existente.
@@ -106,6 +114,13 @@ namespace Hypesoft.API.Controllers
         /// <param name="id">O ID do produto a ser atualizado (da rota)</param>
         /// <param name="command">Os novos dados do produto (do corpo)</param>
         [HttpPut("{id}")]
+                /// <summary>
+                /// Atualiza um produto existente.
+                /// </summary>
+                /// <param name="id">O ID do produto a ser atualizado (da rota)</param>
+                /// <param name="command">Os novos dados do produto (do corpo)</param>
+                [HttpPut("{id}")]
+
         [Authorize(Roles = "admin")]
         [ProducesResponseType(StatusCodes.Status204NoContent)] 
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -142,23 +157,6 @@ namespace Hypesoft.API.Controllers
             }
             return NoContent();
         }
-        /// <summary>
-/// [TESTE DE DEBUG] Retorna os claims que a API está vendo no token.
-/// </summary>
-[HttpGet("whoami")]
-[Authorize] // <--- Autorizado (para ler o token), mas SEM roles
-public IActionResult WhoAmI()
-{
-    // Pega todos os claims que o .NET leu do token
-    var claims = User.Claims.Select(c => new 
-    { 
-        Type = c.Type, 
-        Value = c.Value 
-    });
-
-    // Retorna como um JSON
-    return Ok(claims);
-}
         
     }
 }

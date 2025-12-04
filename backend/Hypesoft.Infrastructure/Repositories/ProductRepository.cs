@@ -2,12 +2,10 @@ using Hypesoft.Domain.Entities;
 using Hypesoft.Domain.Repositories;
 using Hypesoft.Infrastructure.Data;
 using MongoDB.Driver;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using MongoDB.Bson;
 using Hypesoft.Domain.Models; 
-using System.Linq; 
 using MongoDB.Driver.Linq;
+using Microsoft.VisualBasic;
 
 namespace Hypesoft.Infrastructure.Repositories
 {
@@ -144,5 +142,28 @@ public async Task<IEnumerable<CategoryProductCountDto>> GetProductsPerCategoryAs
     var aggregationResult = await _collection.AggregateAsync<CategoryProductCountDto>(pipeline);
     return await aggregationResult.ToListAsync();
 }
+
+
+
+
+
+        // 1. Implementa a contagem total
+        public async Task<long> CountAsync()
+        {
+            // A Collection é herdada da classe Repository<T>
+            return await _collection.CountDocumentsAsync(_ => true);
+        }
+
+        // 2. Implementa a paginação (Skip/Limit)
+        public async Task<List<Product>> GetPaginatedProducts(int skip, int limit)
+        {
+            return await _collection.Find(_ => true)
+                                   .Skip(skip) // Pula os documentos
+                                   .Limit(limit) // Limita o número de documentos
+                                   .ToListAsync();
+        }
     }
+
+
+
 }

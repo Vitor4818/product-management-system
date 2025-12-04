@@ -1,12 +1,31 @@
 using Hypesoft.Application;
 using Hypesoft.Infrastructure.Configurations;
+using Hypesoft.Application.Extensions; 
+using Hypesoft.API.Middlewares; 
+using Serilog;
 using Hypesoft.Application.Extensions;
 using Hypesoft.API.Middlewares;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Serilog;
+using Microsoft.Extensions.Caching.Distributed;
+
+
+
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("logs/hypesoft_log.txt", rollingInterval: RollingInterval.Day) 
+    .CreateLogger();
+
 
 var builder = WebApplication.CreateBuilder(args);
 
+// utiliza o serilg
+builder.Host.UseSerilog();
+
+
+// Registra o Cache In-Memory
+builder.Services.AddDistributedMemoryCache();
 
 
 // Todos os serviços da camada de Aplicação
