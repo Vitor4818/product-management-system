@@ -1,0 +1,724 @@
+2025-12-01 17:38:53.384 -03:00 [INF] User profile is available. Using 'C:\Users\Vitor Gomes\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-01 17:38:54.106 -03:00 [INF] Now listening on: http://localhost:5046
+2025-12-01 17:38:54.115 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-01 17:38:54.121 -03:00 [INF] Hosting environment: Development
+2025-12-01 17:38:54.124 -03:00 [INF] Content root path: C:\Users\Vitor Gomes\Documents\Hypesoft.ProductManagement\backend\Hypesoft.API
+2025-12-01 17:43:21.905 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - application/json 138
+2025-12-01 17:43:21.985 -03:00 [WRN] Failed to determine the https port for redirect.
+2025-12-01 17:43:22.122 -03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-01 17:43:22.131 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-01 17:43:22.144 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 401 0 null 242.9518ms
+2025-12-01 17:57:28.776 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - application/json 138
+2025-12-01 17:57:30.373 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 17:57:30.440 -03:00 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts() on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 17:57:30.473 -03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-12-01 17:57:38.927 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 17:57:39.414 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API) in 8955.753ms
+2025-12-01 17:57:39.423 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 17:57:39.429 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 200 null application/json; charset=utf-8 10655.575ms
+2025-12-01 18:38:43.717 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - application/json 138
+2025-12-01 18:38:43.732 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 18:38:43.737 -03:00 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts() on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 18:38:43.919 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 18:38:43.925 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API) in 185.7754ms
+2025-12-01 18:38:43.939 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 18:38:43.944 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 200 null application/json; charset=utf-8 227.7864ms
+2025-12-01 18:38:45.991 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - application/json 138
+2025-12-01 18:38:45.998 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 18:38:45.999 -03:00 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts() on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 18:38:46.028 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 18:38:46.061 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API) in 57.1718ms
+2025-12-01 18:38:46.133 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 18:38:46.677 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 200 null application/json; charset=utf-8 686.2161ms
+2025-12-01 18:38:49.149 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - application/json 138
+2025-12-01 18:38:49.156 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 18:38:49.160 -03:00 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts() on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 18:38:49.188 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 18:38:49.200 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API) in 37.8387ms
+2025-12-01 18:38:49.209 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 18:38:49.212 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 200 null application/json; charset=utf-8 62.9643ms
+2025-12-01 18:38:51.082 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - application/json 138
+2025-12-01 18:38:51.086 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 18:38:51.156 -03:00 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts() on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 18:38:51.234 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 18:38:51.267 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API) in 55.104ms
+2025-12-01 18:38:51.305 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 18:38:51.311 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 200 null application/json; charset=utf-8 229.3225ms
+2025-12-01 19:26:18.633 -03:00 [INF] User profile is available. Using 'C:\Users\Vitor Gomes\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-01 19:26:19.063 -03:00 [INF] Now listening on: https://localhost:7151
+2025-12-01 19:26:19.066 -03:00 [INF] Now listening on: http://localhost:5046
+2025-12-01 19:26:19.147 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-01 19:26:19.151 -03:00 [INF] Hosting environment: Development
+2025-12-01 19:26:19.152 -03:00 [INF] Content root path: C:\Users\Vitor Gomes\Documents\Hypesoft.ProductManagement\backend\Hypesoft.API
+2025-12-01 19:26:26.886 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - application/json 138
+2025-12-01 19:26:26.957 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 307 0 null 72.7057ms
+2025-12-01 19:26:27.055 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products - application/json 138
+2025-12-01 19:26:29.957 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '12/1/2025 9:56:56 PM', Current time (UTC): '12/1/2025 10:26:29 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-12-01 19:26:29.981 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '12/1/2025 9:56:56 PM', Current time (UTC): '12/1/2025 10:26:29 PM'.
+2025-12-01 19:26:29.995 -03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (admin)
+2025-12-01 19:26:30.006 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-01 19:26:30.013 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products - 401 0 null 2958.013ms
+2025-12-01 19:27:25.761 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - application/json 138
+2025-12-01 19:27:25.770 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 307 0 null 9.4465ms
+2025-12-01 19:27:25.775 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products - application/json 138
+2025-12-01 19:27:25.812 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 19:27:25.880 -03:00 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(Hypesoft.Application.Queries.GetAllProductsQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 19:27:25.896 -03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-12-01 19:27:26.901 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 19:27:26.936 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API) in 1043.6482ms
+2025-12-01 19:27:26.937 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 19:27:26.941 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products - 200 null application/json; charset=utf-8 1166.3044ms
+2025-12-01 19:53:37.641 -03:00 [INF] Application is shutting down...
+2025-12-01 20:54:41.395 -03:00 [INF] User profile is available. Using 'C:\Users\Vitor Gomes\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-01 20:54:42.999 -03:00 [INF] Now listening on: https://localhost:7151
+2025-12-01 20:54:43.014 -03:00 [INF] Now listening on: http://localhost:5046
+2025-12-01 20:54:43.280 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-01 20:54:43.681 -03:00 [INF] Hosting environment: Development
+2025-12-01 20:54:43.689 -03:00 [INF] Content root path: C:\Users\Vitor Gomes\Documents\Hypesoft.ProductManagement\backend\Hypesoft.API
+2025-12-01 20:54:56.715 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - application/json 138
+2025-12-01 20:54:56.928 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 307 0 null 234.1264ms
+2025-12-01 20:54:57.098 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products - application/json 138
+2025-12-01 20:55:02.575 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '12/1/2025 11:26:47 PM', Current time (UTC): '12/1/2025 11:55:02 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-12-01 20:55:02.713 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '12/1/2025 11:26:47 PM', Current time (UTC): '12/1/2025 11:55:02 PM'.
+2025-12-01 20:55:02.738 -03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (admin)
+2025-12-01 20:55:02.757 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-01 20:55:02.832 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products - 401 0 null 5733.2145ms
+2025-12-01 20:56:04.806 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - application/json 138
+2025-12-01 20:56:04.846 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 307 0 null 40.51ms
+2025-12-01 20:56:04.874 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products - application/json 138
+2025-12-01 20:56:04.943 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 20:56:05.025 -03:00 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(Hypesoft.Application.Queries.GetAllProductsQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 20:56:05.041 -03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-12-01 20:56:09.428 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 20:56:09.507 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API) in 4468.3557ms
+2025-12-01 20:56:09.522 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 20:56:09.535 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products - 200 null application/json; charset=utf-8 4661.4271ms
+2025-12-01 20:56:32.037 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products/by-category/1 - application/json 138
+2025-12-01 20:56:32.051 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products/by-category/1 - 307 0 null 14.3615ms
+2025-12-01 20:56:32.062 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products/by-category/1 - application/json 138
+2025-12-01 20:56:32.079 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 20:56:32.092 -03:00 [INF] Route matched with {action = "GetProductsByCategoryId", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsByCategoryId(System.String, Hypesoft.Application.Queries.GetProductsByCategoryIdQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 20:56:32.111 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-12-01 20:56:32.151 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API) in 51.1878ms
+2025-12-01 20:56:32.176 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 20:56:32.177 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products/by-category/1 - 400 null application/problem+json; charset=utf-8 114.3705ms
+2025-12-01 20:56:49.100 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - application/json 138
+2025-12-01 20:56:49.107 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 307 0 null 7.3485ms
+2025-12-01 20:56:49.112 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products - application/json 138
+2025-12-01 20:56:49.262 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 20:56:49.274 -03:00 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(Hypesoft.Application.Queries.GetAllProductsQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 20:56:49.379 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 20:56:49.384 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API) in 100.5872ms
+2025-12-01 20:56:49.390 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 20:56:49.396 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products - 200 null application/json; charset=utf-8 283.4212ms
+2025-12-01 20:56:59.365 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products/by-category/1 - application/json 138
+2025-12-01 20:56:59.383 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products/by-category/1 - 307 0 null 17.474ms
+2025-12-01 20:56:59.384 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products/by-category/1 - application/json 138
+2025-12-01 20:56:59.395 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 20:56:59.396 -03:00 [INF] Route matched with {action = "GetProductsByCategoryId", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsByCategoryId(System.String, Hypesoft.Application.Queries.GetProductsByCategoryIdQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 20:56:59.410 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-12-01 20:56:59.415 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API) in 5.9275ms
+2025-12-01 20:56:59.426 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 20:56:59.429 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products/by-category/1 - 400 null application/problem+json; charset=utf-8 44.8125ms
+2025-12-01 20:57:00.204 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a3333333333333333333 - application/json 138
+2025-12-01 20:57:00.206 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a3333333333333333333 - 307 0 null 2.7595ms
+2025-12-01 20:57:00.212 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a3333333333333333333 - application/json 138
+2025-12-01 20:57:00.224 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 20:57:00.229 -03:00 [INF] Route matched with {action = "GetProductsByCategoryId", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsByCategoryId(System.String, Hypesoft.Application.Queries.GetProductsByCategoryIdQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 20:57:00.235 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-12-01 20:57:00.240 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API) in 4.6012ms
+2025-12-01 20:57:00.246 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 20:57:00.252 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a3333333333333333333 - 400 null application/problem+json; charset=utf-8 39.9021ms
+2025-12-01 20:57:01.823 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a3333333333333333333 - application/json 138
+2025-12-01 20:57:01.838 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a3333333333333333333 - 307 0 null 15.1483ms
+2025-12-01 20:57:01.841 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a3333333333333333333 - application/json 138
+2025-12-01 20:57:01.856 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 20:57:01.858 -03:00 [INF] Route matched with {action = "GetProductsByCategoryId", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsByCategoryId(System.String, Hypesoft.Application.Queries.GetProductsByCategoryIdQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 20:57:01.863 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-12-01 20:57:01.873 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API) in 10.1578ms
+2025-12-01 20:57:01.888 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 20:57:01.890 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a3333333333333333333 - 400 null application/problem+json; charset=utf-8 48.8963ms
+2025-12-01 20:57:10.104 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - application/json 138
+2025-12-01 20:57:10.111 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 307 0 null 7.4551ms
+2025-12-01 20:57:10.113 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products - application/json 138
+2025-12-01 20:57:10.127 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 20:57:10.129 -03:00 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(Hypesoft.Application.Queries.GetAllProductsQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 20:57:10.171 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 20:57:10.173 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API) in 26.9511ms
+2025-12-01 20:57:10.177 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 20:57:10.208 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products - 200 null application/json; charset=utf-8 94.6531ms
+2025-12-01 20:57:42.906 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - application/json 138
+2025-12-01 20:57:42.917 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - 307 0 null 36.7256ms
+2025-12-01 20:57:42.924 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - application/json 138
+2025-12-01 20:57:42.969 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 20:57:42.976 -03:00 [INF] Route matched with {action = "GetProductsByCategoryId", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsByCategoryId(System.String, Hypesoft.Application.Queries.GetProductsByCategoryIdQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 20:57:42.991 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-12-01 20:57:42.996 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API) in 5.0847ms
+2025-12-01 20:57:43.000 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 20:57:43.002 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - 400 null application/problem+json; charset=utf-8 77.7677ms
+2025-12-01 20:59:33.119 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - application/json 138
+2025-12-01 20:59:33.124 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - 307 0 null 5.7983ms
+2025-12-01 20:59:33.142 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - application/json 138
+2025-12-01 20:59:33.150 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 20:59:33.153 -03:00 [INF] Route matched with {action = "GetProductsByCategoryId", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsByCategoryId(System.String, Hypesoft.Application.Queries.GetProductsByCategoryIdQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 20:59:33.157 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-12-01 20:59:33.161 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API) in 4.123ms
+2025-12-01 20:59:33.165 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 20:59:33.167 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - 400 null application/problem+json; charset=utf-8 25.0694ms
+2025-12-01 21:03:46.198 -03:00 [INF] User profile is available. Using 'C:\Users\Vitor Gomes\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-01 21:03:46.927 -03:00 [INF] Now listening on: https://localhost:7151
+2025-12-01 21:03:46.929 -03:00 [INF] Now listening on: http://localhost:5046
+2025-12-01 21:03:47.314 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-01 21:03:47.317 -03:00 [INF] Hosting environment: Development
+2025-12-01 21:03:47.318 -03:00 [INF] Content root path: C:\Users\Vitor Gomes\Documents\Hypesoft.ProductManagement\backend\Hypesoft.API
+2025-12-01 21:03:50.249 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - null null
+2025-12-01 21:03:51.243 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - 307 0 null 1005.1388ms
+2025-12-01 21:03:52.067 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - null null
+2025-12-01 21:03:58.829 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 21:03:59.701 -03:00 [INF] Route matched with {action = "GetProductsByCategoryId", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsByCategoryId(System.String, Hypesoft.Application.Queries.GetProductsByCategoryIdQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 21:04:00.305 -03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-12-01 21:04:00.465 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-12-01 21:04:00.560 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API) in 268.8054ms
+2025-12-01 21:04:00.651 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 21:04:00.662 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - 400 null application/problem+json; charset=utf-8 8595.4616ms
+2025-12-01 21:04:04.861 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - null null
+2025-12-01 21:04:04.872 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - 307 0 null 10.4984ms
+2025-12-01 21:04:04.888 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - null null
+2025-12-01 21:04:04.917 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 21:04:04.921 -03:00 [INF] Route matched with {action = "GetProductsByCategoryId", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsByCategoryId(System.String, Hypesoft.Application.Queries.GetProductsByCategoryIdQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 21:04:04.940 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-12-01 21:04:04.949 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API) in 11.5449ms
+2025-12-01 21:04:04.951 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 21:04:04.968 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - 400 null application/problem+json; charset=utf-8 80.2028ms
+2025-12-01 21:05:47.722 -03:00 [INF] User profile is available. Using 'C:\Users\Vitor Gomes\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-01 21:05:48.370 -03:00 [INF] Now listening on: https://localhost:7151
+2025-12-01 21:05:48.375 -03:00 [INF] Now listening on: http://localhost:5046
+2025-12-01 21:05:48.522 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-01 21:05:48.524 -03:00 [INF] Hosting environment: Development
+2025-12-01 21:05:48.525 -03:00 [INF] Content root path: C:\Users\Vitor Gomes\Documents\Hypesoft.ProductManagement\backend\Hypesoft.API
+2025-12-01 21:05:55.538 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - null null
+2025-12-01 21:05:56.886 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - 307 0 null 1369.2824ms
+2025-12-01 21:05:57.214 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - null null
+2025-12-01 21:06:00.682 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 21:06:00.905 -03:00 [INF] Route matched with {action = "GetProductsByCategoryId", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsByCategoryId(System.String, Hypesoft.Application.Queries.GetProductsByCategoryIdQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 21:06:01.048 -03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-12-01 21:06:01.218 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-12-01 21:06:02.579 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API) in 1543.4443ms
+2025-12-01 21:06:02.598 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 21:06:02.604 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - 400 null application/problem+json; charset=utf-8 5389.8247ms
+2025-12-01 21:06:05.091 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - null null
+2025-12-01 21:06:05.096 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - 307 0 null 5.473ms
+2025-12-01 21:06:05.102 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - null null
+2025-12-01 21:06:05.115 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 21:06:05.120 -03:00 [INF] Route matched with {action = "GetProductsByCategoryId", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsByCategoryId(System.String, Hypesoft.Application.Queries.GetProductsByCategoryIdQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 21:06:05.136 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-12-01 21:06:05.141 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API) in 5.5998ms
+2025-12-01 21:06:05.156 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 21:06:05.159 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - 400 null application/problem+json; charset=utf-8 57.4085ms
+2025-12-01 21:09:34.332 -03:00 [INF] User profile is available. Using 'C:\Users\Vitor Gomes\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-01 21:09:35.098 -03:00 [INF] Now listening on: https://localhost:7151
+2025-12-01 21:09:35.101 -03:00 [INF] Now listening on: http://localhost:5046
+2025-12-01 21:09:35.222 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-01 21:09:35.318 -03:00 [INF] Hosting environment: Development
+2025-12-01 21:09:35.319 -03:00 [INF] Content root path: C:\Users\Vitor Gomes\Documents\Hypesoft.ProductManagement\backend\Hypesoft.API
+2025-12-01 21:09:42.121 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - null null
+2025-12-01 21:09:44.191 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - 307 0 null 2488.9547ms
+2025-12-01 21:09:44.449 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - null null
+2025-12-01 21:09:45.608 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 21:09:45.702 -03:00 [INF] Route matched with {action = "GetProductsByCategoryId", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsByCategoryId(System.String, Hypesoft.Application.Queries.GetProductsByCategoryIdQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 21:09:45.731 -03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-12-01 21:09:47.426 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 21:09:47.495 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API) in 1769.6299ms
+2025-12-01 21:09:47.504 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 21:09:47.524 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - 200 null application/json; charset=utf-8 3075.3294ms
+2025-12-01 21:09:58.263 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a222222222222222222 - null null
+2025-12-01 21:09:58.275 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a222222222222222222 - 307 0 null 12.2839ms
+2025-12-01 21:09:58.282 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a222222222222222222 - null null
+2025-12-01 21:09:58.425 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 21:09:58.427 -03:00 [INF] Route matched with {action = "GetProductsByCategoryId", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsByCategoryId(System.String, Hypesoft.Application.Queries.GetProductsByCategoryIdQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 21:15:08.552 -03:00 [INF] User profile is available. Using 'C:\Users\Vitor Gomes\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-01 21:15:09.032 -03:00 [INF] Now listening on: https://localhost:7151
+2025-12-01 21:15:09.034 -03:00 [INF] Now listening on: http://localhost:5046
+2025-12-01 21:15:09.179 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-01 21:15:09.228 -03:00 [INF] Hosting environment: Development
+2025-12-01 21:15:09.229 -03:00 [INF] Content root path: C:\Users\Vitor Gomes\Documents\Hypesoft.ProductManagement\backend\Hypesoft.API
+2025-12-01 21:15:43.608 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - null null
+2025-12-01 21:15:44.077 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 307 0 null 497.7803ms
+2025-12-01 21:15:44.152 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products - null null
+2025-12-01 21:15:48.563 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 21:15:48.625 -03:00 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(Hypesoft.Application.Queries.GetAllProductsQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 21:15:48.636 -03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-12-01 21:15:50.816 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 21:15:50.884 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API) in 2249.4935ms
+2025-12-01 21:15:50.888 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 21:15:50.897 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products - 200 null application/json; charset=utf-8 6744.881ms
+2025-12-01 21:16:11.471 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - null null
+2025-12-01 21:16:11.484 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 307 0 null 13.0768ms
+2025-12-01 21:16:11.498 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products - null null
+2025-12-01 21:16:11.513 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 21:16:11.514 -03:00 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(Hypesoft.Application.Queries.GetAllProductsQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 21:16:11.557 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 21:16:11.563 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API) in 22.4716ms
+2025-12-01 21:16:11.572 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 21:16:11.574 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products - 200 null application/json; charset=utf-8 75.713ms
+2025-12-01 21:16:13.240 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - null null
+2025-12-01 21:16:13.258 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 307 0 null 18.3463ms
+2025-12-01 21:16:13.260 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products - null null
+2025-12-01 21:16:13.272 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 21:16:13.273 -03:00 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(Hypesoft.Application.Queries.GetAllProductsQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 21:16:13.464 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 21:16:13.481 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API) in 195.0565ms
+2025-12-01 21:16:13.513 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 21:16:13.517 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products - 200 null application/json; charset=utf-8 257.4117ms
+2025-12-01 21:16:23.381 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - null null
+2025-12-01 21:16:23.396 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - 307 0 null 15.6476ms
+2025-12-01 21:16:23.398 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - null null
+2025-12-01 21:16:23.408 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 21:16:23.418 -03:00 [INF] Route matched with {action = "GetProductsByCategoryId", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsByCategoryId(System.String, Hypesoft.Application.Queries.GetProductsByCategoryIdQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 21:16:23.512 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 21:16:23.515 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API) in 94.7947ms
+2025-12-01 21:16:23.520 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 21:16:23.524 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - 200 null application/json; charset=utf-8 125.9055ms
+2025-12-01 21:16:27.913 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - null null
+2025-12-01 21:16:27.918 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 307 0 null 4.8358ms
+2025-12-01 21:16:27.919 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products - null null
+2025-12-01 21:16:27.929 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 21:16:27.930 -03:00 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(Hypesoft.Application.Queries.GetAllProductsQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 21:16:27.947 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 21:16:27.954 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API) in 19.7942ms
+2025-12-01 21:16:27.958 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 21:16:27.962 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products - 200 null application/json; charset=utf-8 42.7984ms
+2025-12-01 21:16:39.432 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a3333333333333333333 - null null
+2025-12-01 21:16:39.447 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a3333333333333333333 - 307 0 null 14.9391ms
+2025-12-01 21:16:39.462 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a3333333333333333333 - null null
+2025-12-01 21:16:39.537 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 21:16:39.560 -03:00 [INF] Route matched with {action = "GetProductsByCategoryId", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsByCategoryId(System.String, Hypesoft.Application.Queries.GetProductsByCategoryIdQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 21:16:39.587 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 21:16:39.599 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API) in 28.0058ms
+2025-12-01 21:16:39.614 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 21:16:39.615 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a3333333333333333333 - 200 null application/json; charset=utf-8 153.2375ms
+2025-12-01 22:10:03.112 -03:00 [INF] User profile is available. Using 'C:\Users\Vitor Gomes\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-01 22:10:04.989 -03:00 [INF] Now listening on: https://localhost:7151
+2025-12-01 22:10:05.025 -03:00 [INF] Now listening on: http://localhost:5046
+2025-12-01 22:10:05.223 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-01 22:10:05.224 -03:00 [INF] Hosting environment: Development
+2025-12-01 22:10:05.225 -03:00 [INF] Content root path: C:\Users\Vitor Gomes\Documents\Hypesoft.ProductManagement\backend\Hypesoft.API
+2025-12-01 22:10:13.786 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - null null
+2025-12-01 22:10:14.605 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 307 0 null 1059.1289ms
+2025-12-01 22:10:14.769 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products - null null
+2025-12-01 22:10:21.982 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '12/2/2025 12:55:22 AM', Current time (UTC): '12/2/2025 1:10:21 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-12-01 22:10:22.056 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '12/2/2025 12:55:22 AM', Current time (UTC): '12/2/2025 1:10:21 AM'.
+2025-12-01 22:10:22.075 -03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (admin)
+2025-12-01 22:10:22.092 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-01 22:10:22.106 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products - 401 0 null 7337.1706ms
+2025-12-01 22:11:31.947 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - null null
+2025-12-01 22:11:31.989 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 307 0 null 41.6796ms
+2025-12-01 22:11:32.009 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products - null null
+2025-12-01 22:11:32.077 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 22:11:32.320 -03:00 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(Hypesoft.Application.Queries.GetAllProductsQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 22:11:32.341 -03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-12-01 22:11:35.878 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:11:36.428 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API) in 4087.9987ms
+2025-12-01 22:11:36.460 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 22:16:35.873 -03:00 [INF] User profile is available. Using 'C:\Users\Vitor Gomes\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-01 22:16:36.309 -03:00 [INF] Now listening on: https://localhost:7151
+2025-12-01 22:16:36.312 -03:00 [INF] Now listening on: http://localhost:5046
+2025-12-01 22:16:36.734 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-01 22:16:36.736 -03:00 [INF] Hosting environment: Development
+2025-12-01 22:16:36.745 -03:00 [INF] Content root path: C:\Users\Vitor Gomes\Documents\Hypesoft.ProductManagement\backend\Hypesoft.API
+2025-12-01 22:16:42.621 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - null null
+2025-12-01 22:16:42.755 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 307 0 null 141.7948ms
+2025-12-01 22:16:42.851 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products - null null
+2025-12-01 22:16:43.821 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 22:16:43.890 -03:00 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(Hypesoft.Application.Queries.GetAllProductsQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 22:16:43.918 -03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-12-01 22:16:45.527 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:16:45.547 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API) in 1632.706ms
+2025-12-01 22:16:45.572 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 22:16:45.577 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products - 200 null application/json; charset=utf-8 2725.81ms
+2025-12-01 22:17:11.165 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - null null
+2025-12-01 22:17:11.169 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 307 0 null 39.9866ms
+2025-12-01 22:17:11.242 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products - null null
+2025-12-01 22:17:11.292 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 22:17:11.296 -03:00 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(Hypesoft.Application.Queries.GetAllProductsQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 22:33:47.466 -03:00 [INF] User profile is available. Using 'C:\Users\Vitor Gomes\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-01 22:33:48.151 -03:00 [INF] Now listening on: https://localhost:7151
+2025-12-01 22:33:48.182 -03:00 [INF] Now listening on: http://localhost:5046
+2025-12-01 22:33:48.821 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-01 22:33:48.842 -03:00 [INF] Hosting environment: Development
+2025-12-01 22:33:48.846 -03:00 [INF] Content root path: C:\Users\Vitor Gomes\Documents\Hypesoft.ProductManagement\backend\Hypesoft.API
+2025-12-01 22:33:55.743 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - null null
+2025-12-01 22:33:56.775 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 307 0 null 1044.4051ms
+2025-12-01 22:33:57.067 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products - null null
+2025-12-01 22:33:59.305 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 22:33:59.433 -03:00 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(Hypesoft.Application.Queries.GetAllProductsQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 22:33:59.484 -03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-12-01 22:34:02.211 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:34:02.234 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API) in 2762.8022ms
+2025-12-01 22:34:02.240 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 22:34:02.255 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products - 200 null application/json; charset=utf-8 5187.9707ms
+2025-12-01 22:34:08.245 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - null null
+2025-12-01 22:34:08.250 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 307 0 null 4.5617ms
+2025-12-01 22:34:08.262 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products - null null
+2025-12-01 22:34:08.310 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 22:34:08.314 -03:00 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(Hypesoft.Application.Queries.GetAllProductsQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 22:34:08.334 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:34:08.343 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API) in 25.7194ms
+2025-12-01 22:34:08.344 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 22:34:08.350 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products - 200 null application/json; charset=utf-8 88.2182ms
+2025-12-01 22:34:10.385 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - null null
+2025-12-01 22:34:10.393 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 307 0 null 8.0949ms
+2025-12-01 22:34:10.394 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products - null null
+2025-12-01 22:34:10.422 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 22:34:10.428 -03:00 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(Hypesoft.Application.Queries.GetAllProductsQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 22:34:10.435 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:34:10.441 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API) in 7.564ms
+2025-12-01 22:34:10.445 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 22:34:10.447 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products - 200 null application/json; charset=utf-8 53.1145ms
+2025-12-01 22:34:11.543 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - null null
+2025-12-01 22:34:11.549 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 307 0 null 5.389ms
+2025-12-01 22:34:11.551 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products - null null
+2025-12-01 22:34:11.578 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 22:34:11.580 -03:00 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(Hypesoft.Application.Queries.GetAllProductsQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 22:34:11.585 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:34:11.590 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API) in 5.0749ms
+2025-12-01 22:34:11.596 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 22:34:11.600 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products - 200 null application/json; charset=utf-8 49.2412ms
+2025-12-01 22:34:12.679 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - null null
+2025-12-01 22:34:12.694 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 307 0 null 14.7739ms
+2025-12-01 22:34:12.695 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products - null null
+2025-12-01 22:34:12.712 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 22:34:12.716 -03:00 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(Hypesoft.Application.Queries.GetAllProductsQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 22:34:12.726 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:34:12.731 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API) in 7.4332ms
+2025-12-01 22:34:12.738 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 22:34:12.739 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products - 200 null application/json; charset=utf-8 44.0734ms
+2025-12-01 22:34:13.842 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - null null
+2025-12-01 22:34:13.846 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 307 0 null 4.354ms
+2025-12-01 22:34:13.850 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products - null null
+2025-12-01 22:34:13.862 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 22:34:13.866 -03:00 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(Hypesoft.Application.Queries.GetAllProductsQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 22:34:13.872 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:34:13.875 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API) in 3.8084ms
+2025-12-01 22:34:13.876 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 22:34:13.885 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products - 200 null application/json; charset=utf-8 34.5385ms
+2025-12-01 22:34:14.896 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - null null
+2025-12-01 22:34:14.901 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 307 0 null 5.8089ms
+2025-12-01 22:34:14.905 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products - null null
+2025-12-01 22:34:14.916 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 22:34:14.917 -03:00 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(Hypesoft.Application.Queries.GetAllProductsQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 22:34:14.930 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:34:14.934 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API) in 4.4689ms
+2025-12-01 22:34:14.937 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 22:34:14.939 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products - 200 null application/json; charset=utf-8 34.1195ms
+2025-12-01 22:34:15.932 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - null null
+2025-12-01 22:34:15.939 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 307 0 null 7.3773ms
+2025-12-01 22:34:15.941 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products - null null
+2025-12-01 22:34:15.951 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 22:34:15.955 -03:00 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(Hypesoft.Application.Queries.GetAllProductsQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 22:34:15.960 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:34:15.963 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API) in 3.2598ms
+2025-12-01 22:34:15.973 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 22:34:15.976 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products - 200 null application/json; charset=utf-8 35.3004ms
+2025-12-01 22:34:16.935 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products - null null
+2025-12-01 22:34:16.944 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products - 307 0 null 8.4722ms
+2025-12-01 22:34:16.945 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products - null null
+2025-12-01 22:34:16.972 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 22:34:16.976 -03:00 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(Hypesoft.Application.Queries.GetAllProductsQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 22:34:17.001 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:34:17.005 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API) in 5.073ms
+2025-12-01 22:34:17.007 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetAllProducts (Hypesoft.API)'
+2025-12-01 22:34:17.015 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products - 200 null application/json; charset=utf-8 69.903ms
+2025-12-01 22:34:28.978 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/category - null null
+2025-12-01 22:34:28.985 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/category - 307 0 null 6.9462ms
+2025-12-01 22:34:28.990 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/category - null null
+2025-12-01 22:34:29.001 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/category - 404 0 null 10.846ms
+2025-12-01 22:34:29.010 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7151/api/category, Response status code: 404
+2025-12-01 22:34:31.406 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/categories - null null
+2025-12-01 22:34:31.441 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/categories - 307 0 null 34.8239ms
+2025-12-01 22:34:31.443 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/categories - null null
+2025-12-01 22:34:31.457 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.CategoriesController.GetAllCategories (Hypesoft.API)'
+2025-12-01 22:34:31.481 -03:00 [INF] Route matched with {action = "GetAllCategories", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategories(Hypesoft.Application.Queries.GetAllCategoriesQuery) on controller Hypesoft.API.Controllers.CategoriesController (Hypesoft.API).
+2025-12-01 22:34:31.590 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.CategoryDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:34:31.594 -03:00 [INF] Executed action Hypesoft.API.Controllers.CategoriesController.GetAllCategories (Hypesoft.API) in 97.5194ms
+2025-12-01 22:34:31.622 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.CategoriesController.GetAllCategories (Hypesoft.API)'
+2025-12-01 22:34:31.633 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/categories - 200 null application/json; charset=utf-8 190.1684ms
+2025-12-01 22:34:35.461 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/categories - null null
+2025-12-01 22:34:35.469 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/categories - null null
+2025-12-01 22:34:35.469 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/categories - 307 0 null 6.602ms
+2025-12-01 22:34:35.485 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.CategoriesController.GetAllCategories (Hypesoft.API)'
+2025-12-01 22:34:35.494 -03:00 [INF] Route matched with {action = "GetAllCategories", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategories(Hypesoft.Application.Queries.GetAllCategoriesQuery) on controller Hypesoft.API.Controllers.CategoriesController (Hypesoft.API).
+2025-12-01 22:34:35.502 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.CategoryDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:34:35.506 -03:00 [INF] Executed action Hypesoft.API.Controllers.CategoriesController.GetAllCategories (Hypesoft.API) in 6.9104ms
+2025-12-01 22:34:35.523 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.CategoriesController.GetAllCategories (Hypesoft.API)'
+2025-12-01 22:34:35.527 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/categories - 200 null application/json; charset=utf-8 57.9384ms
+2025-12-01 22:34:36.683 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/categories - null null
+2025-12-01 22:34:36.689 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/categories - 307 0 null 6.439ms
+2025-12-01 22:34:36.690 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/categories - null null
+2025-12-01 22:34:36.701 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.CategoriesController.GetAllCategories (Hypesoft.API)'
+2025-12-01 22:34:36.702 -03:00 [INF] Route matched with {action = "GetAllCategories", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategories(Hypesoft.Application.Queries.GetAllCategoriesQuery) on controller Hypesoft.API.Controllers.CategoriesController (Hypesoft.API).
+2025-12-01 22:34:36.712 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.CategoryDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:34:36.715 -03:00 [INF] Executed action Hypesoft.API.Controllers.CategoriesController.GetAllCategories (Hypesoft.API) in 4.8817ms
+2025-12-01 22:34:36.717 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.CategoriesController.GetAllCategories (Hypesoft.API)'
+2025-12-01 22:34:36.722 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/categories - 200 null application/json; charset=utf-8 32.0374ms
+2025-12-01 22:34:37.748 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/categories - null null
+2025-12-01 22:34:37.752 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/categories - 307 0 null 3.9874ms
+2025-12-01 22:34:37.760 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/categories - null null
+2025-12-01 22:34:37.789 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.CategoriesController.GetAllCategories (Hypesoft.API)'
+2025-12-01 22:34:37.791 -03:00 [INF] Route matched with {action = "GetAllCategories", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategories(Hypesoft.Application.Queries.GetAllCategoriesQuery) on controller Hypesoft.API.Controllers.CategoriesController (Hypesoft.API).
+2025-12-01 22:34:37.799 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.CategoryDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:34:37.804 -03:00 [INF] Executed action Hypesoft.API.Controllers.CategoriesController.GetAllCategories (Hypesoft.API) in 7.5957ms
+2025-12-01 22:34:37.805 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.CategoriesController.GetAllCategories (Hypesoft.API)'
+2025-12-01 22:34:37.807 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/categories - 200 null application/json; charset=utf-8 47.1534ms
+2025-12-01 22:35:56.304 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products/by-category/69162178fa28c7a74c1219e5 - null null
+2025-12-01 22:35:56.319 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products/by-category/69162178fa28c7a74c1219e5 - 307 0 null 15.551ms
+2025-12-01 22:35:56.348 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products/by-category/69162178fa28c7a74c1219e5 - null null
+2025-12-01 22:35:56.361 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 22:35:56.367 -03:00 [INF] Route matched with {action = "GetProductsByCategoryId", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsByCategoryId(System.String, Hypesoft.Application.Queries.GetProductsByCategoryIdQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 22:35:56.496 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:35:56.498 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API) in 114.6644ms
+2025-12-01 22:35:56.509 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 22:35:56.514 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products/by-category/69162178fa28c7a74c1219e5 - 200 null application/json; charset=utf-8 193.5703ms
+2025-12-01 22:36:10.347 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/categories - null null
+2025-12-01 22:36:10.375 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/categories - 307 0 null 31.5207ms
+2025-12-01 22:36:10.377 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/categories - null null
+2025-12-01 22:36:10.410 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.CategoriesController.GetAllCategories (Hypesoft.API)'
+2025-12-01 22:36:10.418 -03:00 [INF] Route matched with {action = "GetAllCategories", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategories(Hypesoft.Application.Queries.GetAllCategoriesQuery) on controller Hypesoft.API.Controllers.CategoriesController (Hypesoft.API).
+2025-12-01 22:36:10.449 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.CategoryDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:36:10.455 -03:00 [INF] Executed action Hypesoft.API.Controllers.CategoriesController.GetAllCategories (Hypesoft.API) in 20.6189ms
+2025-12-01 22:36:10.464 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.CategoriesController.GetAllCategories (Hypesoft.API)'
+2025-12-01 22:36:10.466 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/categories - 200 null application/json; charset=utf-8 89.1949ms
+2025-12-01 22:36:40.748 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - null null
+2025-12-01 22:36:40.754 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - 307 0 null 5.4159ms
+2025-12-01 22:36:40.761 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - null null
+2025-12-01 22:36:40.787 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 22:36:40.792 -03:00 [INF] Route matched with {action = "GetProductsByCategoryId", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsByCategoryId(System.String, Hypesoft.Application.Queries.GetProductsByCategoryIdQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 22:36:40.818 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:36:40.822 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API) in 14.351ms
+2025-12-01 22:36:40.827 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 22:36:40.830 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - 200 null application/json; charset=utf-8 73.822ms
+2025-12-01 22:36:43.361 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - null null
+2025-12-01 22:36:43.369 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - 307 0 null 7.7676ms
+2025-12-01 22:36:43.371 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - null null
+2025-12-01 22:36:43.383 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 22:36:43.387 -03:00 [INF] Route matched with {action = "GetProductsByCategoryId", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsByCategoryId(System.String, Hypesoft.Application.Queries.GetProductsByCategoryIdQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 22:36:43.394 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:36:43.404 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API) in 10.5976ms
+2025-12-01 22:36:43.411 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 22:36:43.415 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - 200 null application/json; charset=utf-8 44.0368ms
+2025-12-01 22:36:44.522 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - null null
+2025-12-01 22:36:44.531 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - 307 0 null 8.7783ms
+2025-12-01 22:36:44.533 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - null null
+2025-12-01 22:36:44.555 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 22:36:44.559 -03:00 [INF] Route matched with {action = "GetProductsByCategoryId", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsByCategoryId(System.String, Hypesoft.Application.Queries.GetProductsByCategoryIdQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 22:36:44.587 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:36:44.589 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API) in 2.6182ms
+2025-12-01 22:36:44.594 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 22:36:44.608 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - 200 null application/json; charset=utf-8 75.2589ms
+2025-12-01 22:36:45.586 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - null null
+2025-12-01 22:36:45.595 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - 307 0 null 8.9233ms
+2025-12-01 22:36:45.599 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - null null
+2025-12-01 22:36:45.611 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 22:36:45.614 -03:00 [INF] Route matched with {action = "GetProductsByCategoryId", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsByCategoryId(System.String, Hypesoft.Application.Queries.GetProductsByCategoryIdQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 22:36:45.620 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:36:45.622 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API) in 2.3047ms
+2025-12-01 22:36:45.628 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 22:36:45.633 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - 200 null application/json; charset=utf-8 33.032ms
+2025-12-01 22:36:47.262 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - null null
+2025-12-01 22:36:47.406 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products/by-category/6734a2222222222222222222 - 307 0 null 144.4481ms
+2025-12-01 22:36:47.422 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - null null
+2025-12-01 22:36:47.433 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 22:36:47.439 -03:00 [INF] Route matched with {action = "GetProductsByCategoryId", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsByCategoryId(System.String, Hypesoft.Application.Queries.GetProductsByCategoryIdQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 22:36:47.458 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:36:47.472 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API) in 17.6069ms
+2025-12-01 22:36:47.481 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByCategoryId (Hypesoft.API)'
+2025-12-01 22:36:47.483 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products/by-category/6734a2222222222222222222 - 200 null application/json; charset=utf-8 60.7912ms
+2025-12-01 22:37:00.053 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products/search?Name=Cami - null null
+2025-12-01 22:37:00.056 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products/search?Name=Cami - 307 0 null 4.1191ms
+2025-12-01 22:37:00.060 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products/search?Name=Cami - null null
+2025-12-01 22:37:00.072 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByName (Hypesoft.API)'
+2025-12-01 22:37:00.089 -03:00 [INF] Route matched with {action = "GetProductsByName", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsByName(Hypesoft.Application.Queries.GetProductsByNameQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 22:37:00.148 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:37:00.150 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetProductsByName (Hypesoft.API) in 53.6743ms
+2025-12-01 22:37:00.154 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByName (Hypesoft.API)'
+2025-12-01 22:37:00.156 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products/search?Name=Cami - 200 null application/json; charset=utf-8 95.6106ms
+2025-12-01 22:37:01.459 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products/search?Name=Cami - null null
+2025-12-01 22:37:01.466 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products/search?Name=Cami - 307 0 null 7.1865ms
+2025-12-01 22:37:01.478 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products/search?Name=Cami - null null
+2025-12-01 22:37:01.525 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByName (Hypesoft.API)'
+2025-12-01 22:37:01.527 -03:00 [INF] Route matched with {action = "GetProductsByName", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsByName(Hypesoft.Application.Queries.GetProductsByNameQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 22:37:01.555 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:37:01.559 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetProductsByName (Hypesoft.API) in 6.0925ms
+2025-12-01 22:37:01.561 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByName (Hypesoft.API)'
+2025-12-01 22:37:01.565 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products/search?Name=Cami - 200 null application/json; charset=utf-8 86.8521ms
+2025-12-01 22:37:11.665 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products/search?Name=atos - null null
+2025-12-01 22:37:11.673 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products/search?Name=atos - 307 0 null 7.8417ms
+2025-12-01 22:37:11.683 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products/search?Name=atos - null null
+2025-12-01 22:37:11.695 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByName (Hypesoft.API)'
+2025-12-01 22:37:11.698 -03:00 [INF] Route matched with {action = "GetProductsByName", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsByName(Hypesoft.Application.Queries.GetProductsByNameQuery) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 22:37:11.722 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:37:11.767 -03:00 [INF] Executed action Hypesoft.API.Controllers.ProductsController.GetProductsByName (Hypesoft.API) in 64.4494ms
+2025-12-01 22:37:11.778 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductsByName (Hypesoft.API)'
+2025-12-01 22:37:11.782 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/products/search?Name=atos - 200 null application/json; charset=utf-8 99.2634ms
+2025-12-01 22:37:25.978 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/products/lowstock - null null
+2025-12-01 22:37:25.984 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/products/lowstock - 307 0 null 6.1789ms
+2025-12-01 22:37:25.986 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/products/lowstock - null null
+2025-12-01 22:37:25.996 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.ProductsController.GetProductById (Hypesoft.API)'
+2025-12-01 22:37:26.005 -03:00 [INF] Route matched with {action = "GetProductById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductById(System.String) on controller Hypesoft.API.Controllers.ProductsController (Hypesoft.API).
+2025-12-01 22:39:45.334 -03:00 [INF] User profile is available. Using 'C:\Users\Vitor Gomes\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-01 22:39:45.804 -03:00 [INF] Now listening on: https://localhost:7151
+2025-12-01 22:39:45.807 -03:00 [INF] Now listening on: http://localhost:5046
+2025-12-01 22:39:45.929 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-01 22:39:45.930 -03:00 [INF] Hosting environment: Development
+2025-12-01 22:39:45.932 -03:00 [INF] Content root path: C:\Users\Vitor Gomes\Documents\Hypesoft.ProductManagement\backend\Hypesoft.API
+2025-12-01 22:40:26.725 -03:00 [INF] User profile is available. Using 'C:\Users\Vitor Gomes\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-01 22:40:27.887 -03:00 [INF] Now listening on: https://localhost:7151
+2025-12-01 22:40:27.889 -03:00 [INF] Now listening on: http://localhost:5046
+2025-12-01 22:40:28.079 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-01 22:40:28.088 -03:00 [INF] Hosting environment: Development
+2025-12-01 22:40:28.089 -03:00 [INF] Content root path: C:\Users\Vitor Gomes\Documents\Hypesoft.ProductManagement\backend\Hypesoft.API
+2025-12-01 22:40:49.470 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/dashboard/lowstock - null null
+2025-12-01 22:40:49.631 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/dashboard/lowstock - 307 0 null 169.802ms
+2025-12-01 22:40:49.704 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/dashboard/lowstock - null null
+2025-12-01 22:40:50.333 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.DashboardController.GetLowStockProducts (Hypesoft.API)'
+2025-12-01 22:40:50.397 -03:00 [INF] Route matched with {action = "GetLowStockProducts", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLowStockProducts(Hypesoft.Application.Queries.GetLowStockProductsQuery) on controller Hypesoft.API.Controllers.DashboardController (Hypesoft.API).
+2025-12-01 22:40:50.405 -03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-12-01 22:40:51.511 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:40:51.531 -03:00 [INF] Executed action Hypesoft.API.Controllers.DashboardController.GetLowStockProducts (Hypesoft.API) in 1124.1079ms
+2025-12-01 22:40:51.562 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.DashboardController.GetLowStockProducts (Hypesoft.API)'
+2025-12-01 22:40:51.581 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/dashboard/lowstock - 200 null application/json; charset=utf-8 1877.7588ms
+2025-12-01 22:40:54.049 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/dashboard/lowstock - null null
+2025-12-01 22:40:54.060 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/dashboard/lowstock - 307 0 null 11.5816ms
+2025-12-01 22:40:54.065 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/dashboard/lowstock - null null
+2025-12-01 22:40:54.072 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.DashboardController.GetLowStockProducts (Hypesoft.API)'
+2025-12-01 22:40:54.087 -03:00 [INF] Route matched with {action = "GetLowStockProducts", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLowStockProducts(Hypesoft.Application.Queries.GetLowStockProductsQuery) on controller Hypesoft.API.Controllers.DashboardController (Hypesoft.API).
+2025-12-01 22:40:54.103 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:40:54.106 -03:00 [INF] Executed action Hypesoft.API.Controllers.DashboardController.GetLowStockProducts (Hypesoft.API) in 16.2535ms
+2025-12-01 22:40:54.109 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.DashboardController.GetLowStockProducts (Hypesoft.API)'
+2025-12-01 22:40:54.111 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/dashboard/lowstock - 200 null application/json; charset=utf-8 46.1147ms
+2025-12-01 22:40:55.428 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/dashboard/lowstock - null null
+2025-12-01 22:40:55.458 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/dashboard/lowstock - 307 0 null 31.1138ms
+2025-12-01 22:40:55.496 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/dashboard/lowstock - null null
+2025-12-01 22:40:55.529 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.DashboardController.GetLowStockProducts (Hypesoft.API)'
+2025-12-01 22:40:55.534 -03:00 [INF] Route matched with {action = "GetLowStockProducts", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLowStockProducts(Hypesoft.Application.Queries.GetLowStockProductsQuery) on controller Hypesoft.API.Controllers.DashboardController (Hypesoft.API).
+2025-12-01 22:40:55.541 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.PaginatedListDto`1[[Hypesoft.Application.DTOs.ProductDto, Hypesoft.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:40:55.543 -03:00 [INF] Executed action Hypesoft.API.Controllers.DashboardController.GetLowStockProducts (Hypesoft.API) in 4.7616ms
+2025-12-01 22:40:55.551 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.DashboardController.GetLowStockProducts (Hypesoft.API)'
+2025-12-01 22:40:55.560 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/dashboard/lowstock - 200 null application/json; charset=utf-8 63.9631ms
+2025-12-01 22:41:19.632 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/categories/6734a2222222222222222222 - null null
+2025-12-01 22:41:19.641 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/categories/6734a2222222222222222222 - 307 0 null 9.5908ms
+2025-12-01 22:41:19.673 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/categories/6734a2222222222222222222 - null null
+2025-12-01 22:41:19.685 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.CategoriesController.GetCategoryById (Hypesoft.API)'
+2025-12-01 22:41:19.696 -03:00 [INF] Route matched with {action = "GetCategoryById", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(System.String) on controller Hypesoft.API.Controllers.CategoriesController (Hypesoft.API).
+2025-12-01 22:41:19.795 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.CategoryDto'.
+2025-12-01 22:41:19.802 -03:00 [INF] Executed action Hypesoft.API.Controllers.CategoriesController.GetCategoryById (Hypesoft.API) in 101.5616ms
+2025-12-01 22:41:19.806 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.CategoriesController.GetCategoryById (Hypesoft.API)'
+2025-12-01 22:41:19.809 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/categories/6734a2222222222222222222 - 200 null application/json; charset=utf-8 164.4918ms
+2025-12-01 22:41:21.400 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/categories/6734a2222222222222222222 - null null
+2025-12-01 22:41:21.404 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/categories/6734a2222222222222222222 - 307 0 null 4.1348ms
+2025-12-01 22:41:21.405 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/categories/6734a2222222222222222222 - null null
+2025-12-01 22:41:21.415 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.CategoriesController.GetCategoryById (Hypesoft.API)'
+2025-12-01 22:41:21.422 -03:00 [INF] Route matched with {action = "GetCategoryById", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(System.String) on controller Hypesoft.API.Controllers.CategoriesController (Hypesoft.API).
+2025-12-01 22:41:21.432 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.CategoryDto'.
+2025-12-01 22:41:21.433 -03:00 [INF] Executed action Hypesoft.API.Controllers.CategoriesController.GetCategoryById (Hypesoft.API) in 3.4352ms
+2025-12-01 22:41:21.434 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.CategoriesController.GetCategoryById (Hypesoft.API)'
+2025-12-01 22:41:21.438 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/categories/6734a2222222222222222222 - 200 null application/json; charset=utf-8 32.9382ms
+2025-12-01 22:41:22.540 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/categories/6734a2222222222222222222 - null null
+2025-12-01 22:41:22.544 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/categories/6734a2222222222222222222 - 307 0 null 3.6019ms
+2025-12-01 22:41:22.545 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/categories/6734a2222222222222222222 - null null
+2025-12-01 22:41:22.557 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.CategoriesController.GetCategoryById (Hypesoft.API)'
+2025-12-01 22:41:22.561 -03:00 [INF] Route matched with {action = "GetCategoryById", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(System.String) on controller Hypesoft.API.Controllers.CategoriesController (Hypesoft.API).
+2025-12-01 22:41:22.571 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Application.DTOs.CategoryDto'.
+2025-12-01 22:41:22.574 -03:00 [INF] Executed action Hypesoft.API.Controllers.CategoriesController.GetCategoryById (Hypesoft.API) in 5.4082ms
+2025-12-01 22:41:22.583 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.CategoriesController.GetCategoryById (Hypesoft.API)'
+2025-12-01 22:41:22.584 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/categories/6734a2222222222222222222 - 200 null application/json; charset=utf-8 39.4881ms
+2025-12-01 22:41:37.023 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/dashboard/metrics - null null
+2025-12-01 22:41:37.041 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/dashboard/metrics - 307 0 null 17.9005ms
+2025-12-01 22:41:37.044 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/dashboard/metrics - null null
+2025-12-01 22:41:37.052 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.DashboardController.GetDashboardMetrics (Hypesoft.API)'
+2025-12-01 22:41:37.059 -03:00 [INF] Route matched with {action = "GetDashboardMetrics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardMetrics() on controller Hypesoft.API.Controllers.DashboardController (Hypesoft.API).
+2025-12-01 22:41:37.238 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Domain.Models.DashboardMetricsDto'.
+2025-12-01 22:41:37.240 -03:00 [INF] Executed action Hypesoft.API.Controllers.DashboardController.GetDashboardMetrics (Hypesoft.API) in 177.6042ms
+2025-12-01 22:41:37.254 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.DashboardController.GetDashboardMetrics (Hypesoft.API)'
+2025-12-01 22:41:37.257 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/dashboard/metrics - 200 null application/json; charset=utf-8 212.9836ms
+2025-12-01 22:41:41.777 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/dashboard/metrics - null null
+2025-12-01 22:41:41.785 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/dashboard/metrics - 307 0 null 7.8384ms
+2025-12-01 22:41:41.787 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/dashboard/metrics - null null
+2025-12-01 22:41:41.795 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.DashboardController.GetDashboardMetrics (Hypesoft.API)'
+2025-12-01 22:41:41.796 -03:00 [INF] Route matched with {action = "GetDashboardMetrics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardMetrics() on controller Hypesoft.API.Controllers.DashboardController (Hypesoft.API).
+2025-12-01 22:41:41.804 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Domain.Models.DashboardMetricsDto'.
+2025-12-01 22:41:41.805 -03:00 [INF] Executed action Hypesoft.API.Controllers.DashboardController.GetDashboardMetrics (Hypesoft.API) in 4.1277ms
+2025-12-01 22:41:41.807 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.DashboardController.GetDashboardMetrics (Hypesoft.API)'
+2025-12-01 22:41:41.811 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/dashboard/metrics - 200 null application/json; charset=utf-8 24.3137ms
+2025-12-01 22:41:42.935 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/dashboard/metrics - null null
+2025-12-01 22:41:42.942 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/dashboard/metrics - 307 0 null 6.5582ms
+2025-12-01 22:41:42.945 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/dashboard/metrics - null null
+2025-12-01 22:41:42.954 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.DashboardController.GetDashboardMetrics (Hypesoft.API)'
+2025-12-01 22:41:42.955 -03:00 [INF] Route matched with {action = "GetDashboardMetrics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardMetrics() on controller Hypesoft.API.Controllers.DashboardController (Hypesoft.API).
+2025-12-01 22:41:42.960 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Domain.Models.DashboardMetricsDto'.
+2025-12-01 22:41:42.962 -03:00 [INF] Executed action Hypesoft.API.Controllers.DashboardController.GetDashboardMetrics (Hypesoft.API) in 2.195ms
+2025-12-01 22:41:42.965 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.DashboardController.GetDashboardMetrics (Hypesoft.API)'
+2025-12-01 22:41:42.969 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/dashboard/metrics - 200 null application/json; charset=utf-8 24.2171ms
+2025-12-01 22:42:01.139 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/dashboard/charts/category-distribution - null null
+2025-12-01 22:42:01.144 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/dashboard/charts/category-distribution - 307 0 null 5.8062ms
+2025-12-01 22:42:01.146 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/dashboard/charts/category-distribution - null null
+2025-12-01 22:42:01.163 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/dashboard/charts/category-distribution - 404 0 null 17.7125ms
+2025-12-01 22:42:01.172 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7151/api/dashboard/charts/category-distribution, Response status code: 404
+2025-12-01 22:42:12.308 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/dashboard/metrics - null null
+2025-12-01 22:42:12.312 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/dashboard/metrics - 307 0 null 3.9697ms
+2025-12-01 22:42:12.314 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/dashboard/metrics - null null
+2025-12-01 22:42:12.325 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.DashboardController.GetDashboardMetrics (Hypesoft.API)'
+2025-12-01 22:42:12.328 -03:00 [INF] Route matched with {action = "GetDashboardMetrics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardMetrics() on controller Hypesoft.API.Controllers.DashboardController (Hypesoft.API).
+2025-12-01 22:42:12.334 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Domain.Models.DashboardMetricsDto'.
+2025-12-01 22:42:12.339 -03:00 [INF] Executed action Hypesoft.API.Controllers.DashboardController.GetDashboardMetrics (Hypesoft.API) in 5.6169ms
+2025-12-01 22:42:12.341 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.DashboardController.GetDashboardMetrics (Hypesoft.API)'
+2025-12-01 22:42:12.345 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/dashboard/metrics - 200 null application/json; charset=utf-8 30.6661ms
+2025-12-01 22:42:14.938 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/dashboard/metrics - null null
+2025-12-01 22:42:14.941 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/dashboard/metrics - 307 0 null 3.0805ms
+2025-12-01 22:42:14.944 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/dashboard/metrics - null null
+2025-12-01 22:42:14.952 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.DashboardController.GetDashboardMetrics (Hypesoft.API)'
+2025-12-01 22:42:14.953 -03:00 [INF] Route matched with {action = "GetDashboardMetrics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardMetrics() on controller Hypesoft.API.Controllers.DashboardController (Hypesoft.API).
+2025-12-01 22:42:14.958 -03:00 [INF] Executing OkObjectResult, writing value of type 'Hypesoft.Domain.Models.DashboardMetricsDto'.
+2025-12-01 22:42:14.961 -03:00 [INF] Executed action Hypesoft.API.Controllers.DashboardController.GetDashboardMetrics (Hypesoft.API) in 3.4945ms
+2025-12-01 22:42:14.963 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.DashboardController.GetDashboardMetrics (Hypesoft.API)'
+2025-12-01 22:42:14.966 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/dashboard/metrics - 200 null application/json; charset=utf-8 21.9469ms
+2025-12-01 22:42:29.377 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/dashboard/chart - null null
+2025-12-01 22:42:29.384 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/dashboard/chart - 307 0 null 6.268ms
+2025-12-01 22:42:29.386 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/dashboard/chart - null null
+2025-12-01 22:42:29.401 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.DashboardController.GetProductsPerCategoryChart (Hypesoft.API)'
+2025-12-01 22:42:29.411 -03:00 [INF] Route matched with {action = "GetProductsPerCategoryChart", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsPerCategoryChart() on controller Hypesoft.API.Controllers.DashboardController (Hypesoft.API).
+2025-12-01 22:42:29.600 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hypesoft.Domain.Models.CategoryProductCountDto, Hypesoft.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:42:29.605 -03:00 [INF] Executed action Hypesoft.API.Controllers.DashboardController.GetProductsPerCategoryChart (Hypesoft.API) in 177.0871ms
+2025-12-01 22:42:29.616 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.DashboardController.GetProductsPerCategoryChart (Hypesoft.API)'
+2025-12-01 22:42:29.622 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/dashboard/chart - 200 null application/json; charset=utf-8 236.6323ms
+2025-12-01 22:42:36.068 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5046/api/dashboard/chart - null null
+2025-12-01 22:42:36.075 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5046/api/dashboard/chart - 307 0 null 6.2913ms
+2025-12-01 22:42:36.076 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7151/api/dashboard/chart - null null
+2025-12-01 22:42:36.085 -03:00 [INF] Executing endpoint 'Hypesoft.API.Controllers.DashboardController.GetProductsPerCategoryChart (Hypesoft.API)'
+2025-12-01 22:42:36.089 -03:00 [INF] Route matched with {action = "GetProductsPerCategoryChart", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductsPerCategoryChart() on controller Hypesoft.API.Controllers.DashboardController (Hypesoft.API).
+2025-12-01 22:42:36.114 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hypesoft.Domain.Models.CategoryProductCountDto, Hypesoft.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-01 22:42:36.117 -03:00 [INF] Executed action Hypesoft.API.Controllers.DashboardController.GetProductsPerCategoryChart (Hypesoft.API) in 21.8209ms
+2025-12-01 22:42:36.124 -03:00 [INF] Executed endpoint 'Hypesoft.API.Controllers.DashboardController.GetProductsPerCategoryChart (Hypesoft.API)'
+2025-12-01 22:42:36.126 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7151/api/dashboard/chart - 200 null application/json; charset=utf-8 49.7038ms

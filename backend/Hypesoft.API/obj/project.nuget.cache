@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "8dWZRW7HTbc=",
+=======
+  "dgSpecHash": "tVXCKtBL9OM=",
+>>>>>>> Stashed changes
   "success": true,
   "projectFilePath": "C:\\Users\\Vitor Gomes\\Documents\\Hypesoft.ProductManagement\\backend\\Hypesoft.API\\Hypesoft.API.csproj",
   "expectedPackageFiles": [

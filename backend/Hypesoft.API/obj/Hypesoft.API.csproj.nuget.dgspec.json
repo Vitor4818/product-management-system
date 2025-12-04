@@ -65,6 +65,13 @@
               "target": "Package",
               "version": "[9.0.10, )"
             },
+<<<<<<< Updated upstream
+=======
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+>>>>>>> Stashed changes
             "Serilog.AspNetCore": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -170,6 +177,10 @@
             "MediatR": {
               "target": "Package",
               "version": "[13.1.0, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[9.0.10, )"
             }
           },
           "imports": [

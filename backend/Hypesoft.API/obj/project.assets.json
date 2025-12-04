@@ -940,7 +940,8 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "FluentValidation.DependencyInjectionExtensions": "12.1.0",
           "Hypesoft.Domain": "1.0.0",
-          "MediatR": "13.1.0"
+          "MediatR": "13.1.0",
+          "Microsoft.Extensions.Caching.Memory": "9.0.10"
         },
         "compile": {
           "bin/placeholder/Hypesoft.Application.dll": {}
@@ -2709,6 +2710,10 @@
       "Hypesoft.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.10",
       "Microsoft.EntityFrameworkCore >= 9.0.10",
+<<<<<<< Updated upstream
+=======
+      "Microsoft.Extensions.Caching.Memory >= 9.0.10",
+>>>>>>> Stashed changes
       "Serilog.AspNetCore >= 9.0.0",
       "Serilog.Sinks.Console >= 6.1.1",
       "Serilog.Sinks.File >= 7.0.0",
@@ -2780,6 +2785,13 @@
             "target": "Package",
             "version": "[9.0.10, )"
           },
+<<<<<<< Updated upstream
+=======
+          "Microsoft.Extensions.Caching.Memory": {
+            "target": "Package",
+            "version": "[9.0.10, )"
+          },
+>>>>>>> Stashed changes
           "Serilog.AspNetCore": {
             "target": "Package",
             "version": "[9.0.0, )"

@@ -14,12 +14,11 @@ namespace Hypesoft.Domain.Repositories
         Task<IEnumerable<Product>> GetLowStockAsync(int threshold = 10);
         Task<IEnumerable<Product>> GetByNameAsync(string name);
         Task<DashboardMetricsDto> GetDashboardMetricsAsync(); 
-        Task<IEnumerable<CategoryProductCountDto>> GetProductsPerCategoryAsync(); 
+        Task<IEnumerable<CategoryProductCountDto>> GetProductsPerCategoryAsync();
 
-
-
-
+        Task<List<Product>> GetPaginatedProducts(int skip, int limit);
+        Task<long> CountAsync();
     }
 
-    
+
 }
