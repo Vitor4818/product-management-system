@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< Updated upstream
-  "dgSpecHash": "8dWZRW7HTbc=",
-=======
-  "dgSpecHash": "tVXCKtBL9OM=",
->>>>>>> Stashed changes
+  "dgSpecHash": "N20nissnlP4=",
   "success": true,
   "projectFilePath": "C:\\Users\\Vitor Gomes\\Documents\\Hypesoft.ProductManagement\\backend\\Hypesoft.API\\Hypesoft.API.csproj",
   "expectedPackageFiles": [
@@ -66,5 +62,15 @@
     "C:\\Users\\Vitor Gomes\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
     "C:\\Users\\Vitor Gomes\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "message": "Problem reading the cache file C:\\Users\\Vitor Gomes\\Documents\\Hypesoft.ProductManagement\\backend\\Hypesoft.API\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0.",
+      "projectPath": "C:\\Users\\Vitor Gomes\\Documents\\Hypesoft.ProductManagement\\backend\\Hypesoft.API\\Hypesoft.API.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Vitor Gomes\\Documents\\Hypesoft.ProductManagement\\backend\\Hypesoft.API\\Hypesoft.API.csproj",
+      "targetGraphs": []
+    }
+  ]
 }

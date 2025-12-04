@@ -2,11 +2,9 @@ using Hypesoft.Application.Commands;
 using Hypesoft.Application.DTOs;
 using Hypesoft.Application.Queries;
 using MediatR;
-using Microsoft.AspNetCore.Mvc;
-<<<<<<< Updated upstream
-=======
 using Microsoft.AspNetCore.Authorization;
->>>>>>> Stashed changes
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Hypesoft.API.Controllers
 {
@@ -107,14 +105,13 @@ namespace Hypesoft.API.Controllers
             return Ok(products);
         }
 
-<<<<<<< Updated upstream
+
         /// <summary>
         /// Atualiza um produto existente.
         /// </summary>
         /// <param name="id">O ID do produto a ser atualizado (da rota)</param>
         /// <param name="command">Os novos dados do produto (do corpo)</param>
         [HttpPut("{id}")]
-=======
                 /// <summary>
                 /// Atualiza um produto existente.
                 /// </summary>
@@ -122,7 +119,6 @@ namespace Hypesoft.API.Controllers
                 /// <param name="command">Os novos dados do produto (do corpo)</param>
                 [HttpPut("{id}")]
         [Authorize(Roles = "admin")]
->>>>>>> Stashed changes
         [ProducesResponseType(StatusCodes.Status204NoContent)] 
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -157,10 +153,5 @@ namespace Hypesoft.API.Controllers
             }
             return NoContent();
         }
-<<<<<<< Updated upstream
-        
-=======
->>>>>>> Stashed changes
-        
     }
 }
