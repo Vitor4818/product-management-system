@@ -5,6 +5,7 @@ using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization; 
 
 namespace Hypesoft.API.Controllers
 {
@@ -15,6 +16,7 @@ namespace Hypesoft.API.Controllers
     /// </summary>
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class ProductsController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -28,6 +30,7 @@ namespace Hypesoft.API.Controllers
         /// Cria um novo produto.
         /// </summary>
         [HttpPost]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> CreateProduct([FromBody] CreateProductCommand command)
         {
             var productId = await _mediator.Send(command);
@@ -98,7 +101,6 @@ namespace Hypesoft.API.Controllers
         [HttpGet("by-category/{categoryId}")]
         [Authorize(Roles = "admin")]
         [ProducesResponseType(typeof(PaginatedListDto<ProductDto>), StatusCodes.Status200OK)]
-        // Note que a query AGORA SÓ PRECISA SER PASSADA.
         public async Task<IActionResult> GetProductsByCategoryId([FromRoute] string categoryId, [FromQuery] GetProductsByCategoryIdQuery query)
         {
             var products = await _mediator.Send(query with { CategoryId = categoryId });
@@ -118,6 +120,7 @@ namespace Hypesoft.API.Controllers
                 /// <param name="id">O ID do produto a ser atualizado (da rota)</param>
                 /// <param name="command">Os novos dados do produto (do corpo)</param>
                 [HttpPut("{id}")]
+
         [Authorize(Roles = "admin")]
         [ProducesResponseType(StatusCodes.Status204NoContent)] 
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -141,6 +144,7 @@ namespace Hypesoft.API.Controllers
         /// </summary>
         /// <param name="id">O ID do produto a ser deletado</param>
         [HttpDelete("{id}")]
+        [Authorize(Roles = "admin")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> DeleteProduct(string id)
@@ -153,5 +157,6 @@ namespace Hypesoft.API.Controllers
             }
             return NoContent();
         }
+        
     }
 }
