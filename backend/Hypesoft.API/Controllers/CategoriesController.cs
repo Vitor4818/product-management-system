@@ -35,9 +35,10 @@ namespace Hypesoft.API.Controllers
         /// <param name="command">Os dados da nova categoria.</param>
         /// <returns>A categoria recém-criada.</returns>
         [HttpPost]
-        [Authorize(Roles = "admin")]
         [ProducesResponseType(typeof(CategoryDto), StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [Authorize(Roles = "admin")]
+
         public async Task<IActionResult> CreateCategory([FromBody] CreateCategoryCommand command)
         {
             var categoryDto = await _mediator.Send(command);

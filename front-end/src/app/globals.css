@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate"; /* Animações do Shadcn */
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* --- CORES DO SHOPSENSE (Sua Paleta Original) --- */
+  --color-primary-900: #3F42DB;
+  --color-primary-800: #4C4FF6;
+  --color-primary-700: #5B5CF6; /* Main Brand */
+  --color-primary-600: #6C6FEF;
+  --color-primary-500: #7D7FF1;
+  
+  --color-background-main: #F6F7FB;
+  --color-background-card: #FFFFFF;
+  
+  --color-status-danger: #EF4444;
+
+  /* --- FONTES --- */
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-title: var(--font-poppins), system-ui, sans-serif;
+
+  /* --- SHADOWS --- */
+  --shadow-card: 0 10px 25px rgba(0,0,0,0.04);
+
+  /* --- INTEGRAÇÃO COM SHADCN (Mapeamento) --- */
+  /* Aqui dizemos: "Shadcn, sua cor primária é o Roxo 700 do ShopSense" */
+  
+  --color-background: var(--color-background-main);
+  --color-foreground: var(--color-text-primary);
+
+  --color-card: var(--color-background-card);
+  --color-card-foreground: var(--color-text-primary);
+
+  --color-popover: var(--color-background-card);
+  --color-popover-foreground: var(--color-text-primary);
+
+  --color-primary: var(--color-primary-700);
+  --color-primary-foreground: #FFFFFF;
+
+  --color-secondary: var(--color-primary-100);
+  --color-secondary-foreground: var(--color-primary-900);
+
+  --color-muted: #F1F5F9;
+  --color-muted-foreground: #64748B;
+
+  --color-accent: var(--color-primary-100);
+  --color-accent-foreground: var(--color-primary-900);
+
+  --color-destructive: var(--color-status-danger);
+  --color-destructive-foreground: #FFFFFF;
+
+  --color-border: #E2E8F0;
+  --color-input: #E2E8F0;
+  --color-ring: var(--color-primary-700);
+
+  --radius: 0.5rem;
+}
+
+/* Utilitários base */
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+}

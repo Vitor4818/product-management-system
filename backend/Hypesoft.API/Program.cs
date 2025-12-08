@@ -62,6 +62,16 @@ builder.Services.AddAuthentication(options =>
 });
 //--
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowNextApp", policy =>
+    {
+        policy.WithOrigins("http://localhost:3000") // A porta do seu Next.js
+              .AllowAnyHeader()
+              .AllowAnyMethod(); // Permite GET, POST, PUT, OPTIONS, etc.
+    });
+});
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -70,6 +80,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 app.UseHttpsRedirection();
+app.UseCors("AllowNextApp");
 
 app.UseAuthentication(); 
 app.UseAuthorization();  
