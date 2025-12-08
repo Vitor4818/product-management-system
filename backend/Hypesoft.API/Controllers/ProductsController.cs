@@ -31,6 +31,7 @@ namespace Hypesoft.API.Controllers
         /// </summary>
         [HttpPost]
         [Authorize(Roles = "admin")]
+
         public async Task<IActionResult> CreateProduct([FromBody] CreateProductCommand command)
         {
             var productId = await _mediator.Send(command);
@@ -44,7 +45,6 @@ namespace Hypesoft.API.Controllers
         /// <param name="query">Parâmetros de paginação (PageNumber e PageSize).</param>
         /// <returns>Uma lista paginada de produtos.</returns>
         [HttpGet]
-        [Authorize(Roles = "admin")] // Apenas usuários com a role "admin" podem listar
         [ProducesResponseType(typeof(PaginatedListDto<ProductDto>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
@@ -79,7 +79,6 @@ namespace Hypesoft.API.Controllers
         /// </summary>
         /// <param name="query">O termo de busca e os parâmetros de paginação.</param>
         [HttpGet("search")]
-        [Authorize(Roles = "admin")]
         [ProducesResponseType(typeof(PaginatedListDto<ProductDto>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> GetProductsByName([FromQuery] GetProductsByNameQuery query)
@@ -99,7 +98,6 @@ namespace Hypesoft.API.Controllers
         /// <param name="categoryId">O ID da categoria para filtrar.</param>
         /// <returns>Uma lista de produtos que pertencem à categoria.</returns>
         [HttpGet("by-category/{categoryId}")]
-        [Authorize(Roles = "admin")]
         [ProducesResponseType(typeof(PaginatedListDto<ProductDto>), StatusCodes.Status200OK)]
         public async Task<IActionResult> GetProductsByCategoryId([FromRoute] string categoryId, [FromQuery] GetProductsByCategoryIdQuery query)
         {
@@ -114,13 +112,6 @@ namespace Hypesoft.API.Controllers
         /// <param name="id">O ID do produto a ser atualizado (da rota)</param>
         /// <param name="command">Os novos dados do produto (do corpo)</param>
         [HttpPut("{id}")]
-                /// <summary>
-                /// Atualiza um produto existente.
-                /// </summary>
-                /// <param name="id">O ID do produto a ser atualizado (da rota)</param>
-                /// <param name="command">Os novos dados do produto (do corpo)</param>
-                [HttpPut("{id}")]
-
         [Authorize(Roles = "admin")]
         [ProducesResponseType(StatusCodes.Status204NoContent)] 
         [ProducesResponseType(StatusCodes.Status404NotFound)]

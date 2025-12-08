@@ -29,7 +29,6 @@ namespace Hypesoft.API.Controllers
         /// </summary>
         /// <param name="query">Parâmetros de paginação (PageNumber e PageSize).</param>
         [HttpGet("lowstock")]
-        [Authorize(Roles = "admin")]
         [ProducesResponseType(typeof(PaginatedListDto<ProductDto>), StatusCodes.Status200OK)]
         public async Task<IActionResult> GetLowStockProducts([FromQuery] GetLowStockProductsQuery query)
         {
