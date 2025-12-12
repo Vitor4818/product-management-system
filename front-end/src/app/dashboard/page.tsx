@@ -1,15 +1,14 @@
 // src/app/dashboard/page.tsx
 "use client";
 
-import { useMetrics } from "@/hooks/use-metrics"; // Supondo que você criou este hook
-import { useLowStock } from "@/hooks/use-low-stock"; // Supondo que você criou este hook
-import { useCategoryBreakdown } from "@/hooks/use-category-breakdown"; // Supondo que você criou este hook
+import { useMetrics } from "@/hooks/use-metrics"; 
+import { useLowStock } from "@/hooks/use-low-stock"; 
+import { useCategoryBreakdown } from "@/hooks/use-category-breakdown"; 
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { DollarSign, Package, TrendingUp, AlertTriangle } from "lucide-react";
 import { CategoryBarChart } from "@/components/charts/category-bar-chart";
 
-// --- COMPONENTE ---
 
 export default function DashboardPage() {
   const { metrics, isLoading: loadingMetrics } = useMetrics();
@@ -17,24 +16,20 @@ export default function DashboardPage() {
   const { data: breakdown, isLoading: loadingBreakdown } = useCategoryBreakdown();
 
 
-  // Renderiza um placeholder simples se houver qualquer carregamento
   if (loadingMetrics || loadingLowStock || loadingBreakdown) {
       return <div className="p-8 text-center">Carregando Dashboard...</div>;
   }
 
-  // Dados para exibição
   const lowStockItems = lowStockData?.items || [];
   const totalProducts = metrics?.totalProducts ?? 0;
   const totalStockValue = metrics?.totalStockValue ?? 0;
 
   return (
     <div className="p-8 max-w-7xl mx-auto space-y-6">
-      <h1 className="text-3xl font-bold text-text-primary">Dashboard (ShopSense Adaptado)</h1>
+      <h1 className="text-3xl font-bold text-text-primary font-bold">Dashboard</h1>
       
-      {/* 1. TOP METRICS / KPIS (Linha 1 do Dashboard) */}
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           
-          {/* Adaptando Total Sales para Total Produtos */}
           <Card className="shadow-sm">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">
@@ -50,7 +45,6 @@ export default function DashboardPage() {
             </CardContent>
           </Card>
 
-          {/* Adaptando Customers para Valor Total de Estoque */}
           <Card className="shadow-sm">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">
@@ -69,14 +63,12 @@ export default function DashboardPage() {
 
       <div className="grid gap-4 lg:grid-cols-7">
         
-        {/* 2. GRÁFICO (Category Breakdown) */}
         <Card className="col-span-4 shadow-sm border-border-soft">
           <CardHeader>
             <CardTitle className="text-lg text-primary-900">Estoque por Categoria</CardTitle>
             <p className="text-sm text-text-muted">Distribuição da quantidade de produtos</p>
           </CardHeader>
           <CardContent className="pl-0">
-            {/* Aqui entra o componente do Recharts */}
             {loadingBreakdown ? (
                <div className="h-[300px] flex items-center justify-center">Carregando gráfico...</div>
             ) : (
@@ -85,7 +77,6 @@ export default function DashboardPage() {
           </CardContent>
         </Card>
 
-        {/* 3. PRODUTOS COM BAIXO ESTOQUE (Top Products) - 3/7 da largura */}
         <Card className="col-span-3 shadow-sm">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
@@ -113,9 +104,7 @@ export default function DashboardPage() {
           </CardContent>
         </Card>
         
-        {/* As seções "Latest Transaction" e "Customer's Countries" (Rodapé do Dashboard)
-             não podem ser implementadas com os dados atuais e seriam substituídas
-             por listagens de produtos ou outros relatórios disponíveis. */}
+
       </div>
     </div>
   );
