@@ -4,7 +4,8 @@ import "./globals.css";
 import { Providers } from "./providers";
 import { QueryProvider } from "@/providers/query-provider";
 import { AppSidebar } from "@/components/sidebar/sidebar";
-import { SidebarProvider} from "@/components/ui/sidebar";
+import { SidebarProvider, SidebarTrigger} from "@/components/ui/sidebar";
+import { Header } from "@/components/Header/Header";
 
 // Fontes
 const inter = Inter({
@@ -31,8 +32,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <Providers>
           <QueryProvider>
-            <SidebarProvider defaultOpen={true}>
+            <SidebarProvider>
               <AppSidebar />
+              <SidebarTrigger className="md:hidden" />
+              <Header/>
               <main className="flex-1">
                 {children}
               </main>
