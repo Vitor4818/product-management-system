@@ -1,7 +1,5 @@
 import { getSession } from "next-auth/react";
 
-// Defina sua URL base aqui (ou use variável de ambiente)
-// Se você ainda não tem backend rodando, pode deixar localhost:5000 por enquanto
 const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5046/api";
 
 async function getHeaders() {
@@ -11,7 +9,6 @@ async function getHeaders() {
     "Content-Type": "application/json",
   };
 
-  // Aqui está a mágica: Injeta o Token se o usuário estiver logado
   if (session?.accessToken) {
     headers["Authorization"] = `Bearer ${session.accessToken}`;
   }
@@ -30,7 +27,6 @@ export const apiClient = {
     });
 
     if (!res.ok) {
-      // Tratamento básico de erro (ex: 401 token expirado)
       throw new Error(`Erro na API: ${res.status} ${res.statusText}`);
     }
 
@@ -51,5 +47,44 @@ export const apiClient = {
     return res.json();
   },
   
-  // Você pode adicionar put, delete, patch aqui seguindo o mesmo padrão...
+ // 🟢 MÉTODO PUT TOTALMENTE PROTEGIDO CONTRA CORPO VAZIO
+  put: async <T>(endpoint: string, body: unknown): Promise<T> => {
+    const headers = await getHeaders();
+
+    const res = await fetch(`${BASE_URL}${endpoint}`, {
+      method: "PUT",
+      headers,
+      body: JSON.stringify(body),
+    });
+
+    if (!res.ok) throw new Error(`Erro na API: ${res.status}`);
+    
+    // 🔍 SE A RESPOSTA VIER VAZIA (Sinal de sucesso no .NET), RETORNA ANTES DE RODAR O .json()
+    if (res.status === 204 || res.headers.get("content-length") === "0") {
+      return {} as T;
+    }
+    
+    try {
+      return await res.json();
+    } catch {
+      return {} as T; // Garantia final contra strings vazias
+    }
+  },
+
+  // 🟢 ADICIONADO: Método DELETE para Exclusão de dados
+  delete: async <T = void>(endpoint: string): Promise<T> => {
+    const headers = await getHeaders();
+
+    const res = await fetch(`${BASE_URL}${endpoint}`, {
+      method: "DELETE",
+      headers,
+    });
+
+    if (!res.ok) throw new Error(`Erro na API: ${res.status}`);
+    
+    // Se a API responder 204 No Content (comum no .NET para Delete bem-sucedido), 
+    // retorna um objeto vazio para não quebrar o .json()
+    if (res.status === 204) return {} as T;
+    return res.json();
+  },
 };

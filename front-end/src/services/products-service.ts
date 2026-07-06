@@ -1,44 +1,71 @@
 import { apiClient } from "./api-client";
 
-// 1. Atualizamos a interface para espelhar o C# (.NET)
 export interface Product {
-  id?: string; // Opcional porque na criação não tem ID ainda
-  Id?: string; // .NET costuma retornar 'Id' maiúsculo
+  id?: string;
+  Id?: string;
   Name: string;
   Description?: string;
   Price: number;
   StockQuantity: number;
-  CategoryId: string; // Agora usamos o ID da categoria
-  CategoryName?: string; // Opcional, caso o back retorne o nome para exibição
+  CategoryId: string;
+  CategoryName?: string;
 }
 
 export const productsService = {
-  getAll: async () => {
+  getAll: async (): Promise<Product[]> => {
     try {
       const response = await apiClient.get<any>("/products");
-      console.log("📦 DADO BRUTO:", response);
 
-      // Lógica de blindagem para encontrar a lista
-      let lista = [];
-      if (Array.isArray(response)) lista = response;
-      else if (response?.data) lista = response.data;
-      else if (response?.items) lista = response.items;
-      else if (response?.result) lista = response.result;
-      else if (response?.value) lista = response.value;
+      console.log("📦 Resposta Products:", response);
 
-      return lista;
+      if (Array.isArray(response)) return response;
+      if (Array.isArray(response?.data)) return response.data;
+      if (Array.isArray(response?.items)) return response.items;
+      if (Array.isArray(response?.result)) return response.result;
+      if (Array.isArray(response?.value)) return response.value;
+
+      console.warn("Formato inesperado da resposta:", response);
+      return [];
     } catch (error) {
-      console.error("Erro no GET:", error);
+      console.error("Erro ao buscar produtos:", error);
       return [];
     }
   },
 
-  getById: async (id: string) => {
+  getById: async (id: string): Promise<Product> => {
     return await apiClient.get<Product>(`/products/${id}`);
   },
 
-  // 2. O create agora recebe e envia os campos exatos que o Back espera
-  create: async (data: Omit<Product, "id" | "Id">) => {
+  create: async (data: Omit<Product, "id" | "Id">): Promise<Product> => {
     return await apiClient.post<Product>("/products", data);
   },
+
+  // 🟢 CORRIGIDO: Removido o "api/" duplicado
+  update: async (id: string, data: Omit<Product, "id" | "Id">): Promise<Product> => {
+    return await apiClient.put<Product>(`/products/${id}`, data);
+  },
+
+  // 🟢 CORRIGIDO: Ajustado com a barra limpa inicial
+  delete: async (id: string): Promise<void> => {
+    await apiClient.delete(`/products/${id}`);
+  },
+
+  getByCategory: async (categoryId: string): Promise<Product[]> => {
+    try {
+      const response = await apiClient.get<any>(`/products/by-category/${categoryId}`);
+      
+      console.log(`📦 Resposta Products Categoria [${categoryId}]:`, response);
+
+      if (Array.isArray(response)) return response;
+      if (Array.isArray(response?.data)) return response.data;
+      if (Array.isArray(response?.items)) return response.items;
+      if (Array.isArray(response?.result)) return response.result;
+      if (Array.isArray(response?.value)) return response.value;
+
+      return [];
+    } catch (error) {
+      console.error(`Erro ao buscar produtos da categoria ${categoryId}:`, error);
+      return [];
+    }
+  }
 };

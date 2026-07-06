@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "mnYe2aKD1lo=",
+  "dgSpecHash": "l5W6G2LifYQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vitor Gomes\\Documents\\Hypesoft.ProductManagement\\backend\\Hypesoft.Domain\\Hypesoft.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Clecio\\Documents\\product-management-system\\backend\\Hypesoft.Domain\\Hypesoft.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Vitor Gomes\\.nuget\\packages\\mongodb.bson\\3.5.0\\mongodb.bson.3.5.0.nupkg.sha512",
-    "C:\\Users\\Vitor Gomes\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
-    "C:\\Users\\Vitor Gomes\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+    "C:\\Users\\Clecio\\.nuget\\packages\\mongodb.bson\\3.5.0\\mongodb.bson.3.5.0.nupkg.sha512",
+    "C:\\Users\\Clecio\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\Clecio\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,41 +1,68 @@
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { productsService, Product } from "@/services/products-service";
 
-// Chave única para o cache
 const PRODUCTS_KEY = ["products"];
 
 export function useProducts() {
   const queryClient = useQueryClient();
 
-  // 1. Listar Produtos (GET)
-  const { 
-    data: products, 
-    isLoading, 
-    isError 
-  } = useQuery({
+  // Sempre busca todos os produtos globalmente
+  const {
+    data: products = [],
+    isLoading,
+    isError,
+    error,
+  } = useQuery<Product[]>({
     queryKey: PRODUCTS_KEY,
     queryFn: productsService.getAll,
   });
 
-  // 2. Criar Produto (POST)
+  // Criar Produto
   const createMutation = useMutation({
     mutationFn: productsService.create,
     onSuccess: () => {
-      // Quando criar com sucesso, invalida o cache para recarregar a lista automaticamente
+      // Invalida a lista de produtos e o breakdown de categorias para atualizar os contadores
       queryClient.invalidateQueries({ queryKey: PRODUCTS_KEY });
-      alert("Produto criado com sucesso!");
+      queryClient.invalidateQueries({ queryKey: ["category-breakdown"] });
     },
-    onError: (error) => {
-      console.error("Erro ao criar:", error);
-      alert("Falha ao criar produto.");
-    }
+  });
+
+  // Atualizar Produto
+  const updateMutation = useMutation({
+    mutationFn: ({ id, data }: { id: string; data: Omit<Product, "id" | "Id"> }) => 
+      productsService.update(id, data),
+    onSuccess: () => {
+      // 🔥 FORÇA O RE-FETCH IMEDIATO DA LISTA (Ignora o staleTime de 1 min)
+      queryClient.invalidateQueries({ queryKey: PRODUCTS_KEY });
+      
+      // 📊 Invalida o gráfico caso o preço ou estoque altere o breakdown
+      queryClient.invalidateQueries({ queryKey: ["category-breakdown"] });
+    },
+  });
+
+  // Excluir Produto
+  const deleteMutation = useMutation({
+    mutationFn: productsService.delete,
+    onSuccess: () => {
+      // 🔥 Remove da tabela no mesmo milissegundo
+      queryClient.invalidateQueries({ queryKey: PRODUCTS_KEY });
+      
+      // 📊 SUMIR DO GRÁFICO: Avisa o hook do gráfico para atualizar imediatamente!
+      // (Substitua "category-breakdown" pela chave exata que está dentro do hook do seu gráfico se for diferente)
+      queryClient.invalidateQueries({ queryKey: ["category-breakdown"] });
+    },
   });
 
   return {
     products,
     isLoading,
     isError,
+    error,
     createProduct: createMutation.mutateAsync,
     isCreating: createMutation.isPending,
+    updateProduct: updateMutation.mutateAsync,
+    isUpdating: updateMutation.isPending,
+    deleteProduct: deleteMutation.mutateAsync,
+    isDeleting: deleteMutation.isPending,
   };
-}
+} 

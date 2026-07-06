@@ -22,11 +22,12 @@ export interface LowStockProduct {
 }
 
 export interface PagedList<T> {
-  items: T[];
+  items: T[];       // Se a API mandar minusculo, mantenha. Se mandar maiúsculo, mude para Items
   pageNumber: number;
   totalPages: number;
-  totalCount: number;
+  totalCount: number; // Mude para TotalCount se notar que a API manda com "T" maiúsculo
 }
+
 
 // --- FUNÇÕES DE SERVIÇO ---
 export const productsService = {
@@ -37,11 +38,11 @@ export const productsService = {
     return await apiClient.get<Metrics>("/dashboard/metrics"); 
   },
 
-  // Nova função para buscar Produtos com baixo estoque
-  getLowStock: async (): Promise<PagedList<LowStockProduct>> => {
-    // Endereço hipotético na API, buscando a primeira página
-    return await apiClient.get<PagedList<LowStockProduct>>("/products/low-stock?page=1"); 
-  },
+// No seu dashboard-service.ts:
+getLowStock: async (): Promise<PagedList<LowStockProduct>> => {
+  // Passando as chaves que batem com as propriedades do C# (PascalCase mapeado pelo query string)
+  return await apiClient.get<PagedList<LowStockProduct>>("/dashboard/lowstock?pageNumber=1&pageSize=10"); 
+},
 
   // Nova função para buscar dados do Gráfico de Categoria
   getCategoryBreakdown: async (): Promise<CategoryBreakdown[]> => {

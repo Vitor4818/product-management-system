@@ -31,35 +31,33 @@ namespace Hypesoft.Application.Handlers
         public async Task<PaginatedListDto<ProductDto>> Handle(
             GetLowStockProductsQuery request, CancellationToken cancellationToken)
         {
-            // GERA CHAVE
-            var cacheKey = $"LowStock_{request.PageNumber}_{request.PageSize}";
-            var cachedResponse = await _cache.GetAsync(cacheKey, cancellationToken);
+            // 1. TRATAMENTO DOS PARÂMETROS (Evita paginação negativa ou divisão por zero)
+       var pageNumber = request.PageNumber <= 0 ? 1 : request.PageNumber;
+var pageSize = request.PageSize <= 0 ? 10 : request.PageSize;
 
-            if (cachedResponse != null)
-            {
-                var cachedString = Encoding.UTF8.GetString(cachedResponse);
-                return JsonSerializer.Deserialize<PaginatedListDto<ProductDto>>(cachedString) ??
-                       new PaginatedListDto<ProductDto>(new List<ProductDto>(), 0, request.PageNumber, request.PageSize);
-            }
+            // GERA CHAVE UTILIZANDO AS VARIÁVEIS TRATADAS
+            var cacheKey = $"LowStock_{pageNumber}_{pageSize}";
 
             // CONSULTA AO BANCO (Se o cache falhar)
             var allLowStockProducts = await _productRepository.GetLowStockAsync(LowStockThreshold);
 
             var totalCount = allLowStockProducts.Count(); 
+            
+            // 2. APLICA A PAGINAÇÃO COM AS VARIÁVEIS TRATADAS
             var paginatedProducts = allLowStockProducts
-                .Skip((request.PageNumber - 1) * request.PageSize)
-                .Take(request.PageSize)
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
                 .ToList();
 
             // Mapeia para DTOs
             var productDtos = _mapper.Map<List<ProductDto>>(paginatedProducts);
 
+            // 3. INSTANCIA O DTO COM VALORES SEGUROS
             var paginatedList = new PaginatedListDto<ProductDto>(
                 productDtos,
                 totalCount,
-                request.PageNumber,
-                request.PageSize);
-
+                pageNumber,
+                pageSize);
 
             // SALVA NO CACHE
             var cacheOptions = new DistributedCacheEntryOptions()
@@ -68,6 +66,7 @@ namespace Hypesoft.Application.Handlers
             var jsonToCache = JsonSerializer.Serialize(paginatedList);
             var bytesToCache = Encoding.UTF8.GetBytes(jsonToCache);
             await _cache.SetAsync(cacheKey, bytesToCache, cacheOptions, cancellationToken);
+            
             return paginatedList;
         }
     }

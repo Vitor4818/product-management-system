@@ -30,11 +30,23 @@ namespace Hypesoft.API.Controllers
         /// <param name="query">Parâmetros de paginação (PageNumber e PageSize).</param>
         [HttpGet("lowstock")]
         [ProducesResponseType(typeof(PaginatedListDto<ProductDto>), StatusCodes.Status200OK)]
-        public async Task<IActionResult> GetLowStockProducts([FromQuery] GetLowStockProductsQuery query)
-        {
-            var products = await _mediator.Send(query);
-            return Ok(products);
-        }
+public async Task<IActionResult> GetLowStockProducts([FromQuery] GetLowStockProductsQuery query)
+{
+    // Garante que o objeto não venha nulo
+    query ??= new GetLowStockProductsQuery();
+
+    // Como as propriedades são 'init' ou o objeto é um record imutável, 
+    // nós criamos uma nova instância ajustando os valores se eles vierem zerados ou negativos.
+    var validatedQuery = new GetLowStockProductsQuery
+    {
+        PageNumber = query.PageNumber <= 0 ? 1 : query.PageNumber,
+        PageSize = query.PageSize <= 0 ? 10 : query.PageSize
+    };
+
+    // Envia a query validada para o MediatR
+    var products = await _mediator.Send(validatedQuery);
+    return Ok(products);
+}
 
 
         /// <summary>
